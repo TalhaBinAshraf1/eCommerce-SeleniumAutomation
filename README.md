@@ -1,2 +1,2 @@
-# SeleniumAutomationPractice
-Full E2E Testing Site -> http://automationpractice.com/  
+# SeleniumAutomationPractice 🤞😃
+Testing Site -> 🌍 http://automationpractice.com/  🌍
