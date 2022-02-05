@@ -9,7 +9,7 @@ public class First extends BasePage {
         super(driver);
     }
 
-    @FindBy(css=".header_user_info [rel]")
+    @FindBy(css="[href='\\/login']")
     public WebElement signInButton;
     public WebElement getSignInButton(){
         return signInButton;
