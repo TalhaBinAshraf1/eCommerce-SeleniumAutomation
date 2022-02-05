@@ -37,7 +37,7 @@ public class BaseClass {
 
     @BeforeMethod
         public void beforeMethod() {
-        driver.navigate().to("http://automationpractice.com/index.php");
+        driver.navigate().to("https://www.automationexercise.com/");
          sleepTest(2000);
         }
     @AfterMethod

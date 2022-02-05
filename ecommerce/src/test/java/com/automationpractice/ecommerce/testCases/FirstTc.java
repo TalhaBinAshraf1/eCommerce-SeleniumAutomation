@@ -12,7 +12,7 @@ public class FirstTc extends BaseClass {
         First f =new First(driver);
 
         f.signInButton.click();
-        System.out.println("Test ran Properly  ");
+        System.out.println("Test ran Properly ");
 
 
     }
