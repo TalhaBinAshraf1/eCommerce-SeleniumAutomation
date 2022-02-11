@@ -15,12 +15,21 @@ public class TestCase1RegisterUserPage extends BasePage {
         return signInButton;
     }
 
-    @FindBy(css="#form > div > div > div:nth-child(3) > div > h2")
+    @FindBy(css="div.container div.row div.col-sm-4:nth-child(3) div.signup-form > h2:nth-child(1)")
     public WebElement newUserSignupText;
     public WebElement getNewUserSignupText(){
-        return signInButton;
+        return newUserSignupText;
     }
 
+    @FindBy(css="form[method='post'] > input[name='name']")
+    public WebElement nameInputFieldInSignUpForm;
+    public WebElement getNameInputFieldInSignUpForm() {
+        return nameInputFieldInSignUpForm;
+    }
 
-
+    @FindBy(css = ".signup-form > form[method='post'] > input[name='email']")
+    public WebElement emailInputFieldInSignUpForm;
+    public WebElement getEmailInputFieldInSignUpForm() {
+        return emailInputFieldInSignUpForm;
+    }
 }

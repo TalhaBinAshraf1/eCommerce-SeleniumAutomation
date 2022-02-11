@@ -1,4 +1,7 @@
 com\automationpractice\ecommerce\pages\BasePage.class
-com\automationpractice\ecommerce\pages\First.class
+com\automationpractice\ecommerce\pages\TestCase1RegisterUserPage.class
+com\automationpractice\ecommerce\testCases\BrokenImages.class
+com\automationpractice\ecommerce\testCases\BrokenUrlTc.class
+com\automationpractice\ecommerce\utilities\Data.class
+com\automationpractice\ecommerce\testCases\TestCase1RegisterUser.class
 com\automationpractice\ecommerce\testCases\BaseClass.class
-com\automationpractice\ecommerce\testCases\FirstTc.class
