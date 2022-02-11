@@ -4,14 +4,11 @@
     <test name = "UITest">
         <classes>
 
-
             <class name ="com.automationpractice.ecommerce.testCases.TestCase1RegisterUser">
                 <methods>
-                    <include name="firstTc" />
+                    <include name="testCase1RegisterUser" />
                 </methods>
             </class>
-
-
 
         </classes>
     </test>
