@@ -34,12 +34,12 @@ public class BaseClass {
 
 //        driver = new ChromeDriver();
 
+//
+//        WebDriverManager.chromedriver().setup();
+//        driver = new ChromeDriver();
 
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
-
-//        WebDriverManager.firefoxdriver().setup();
-//        driver = new FirefoxDriver();
+        WebDriverManager.firefoxdriver().setup();
+        driver = new FirefoxDriver();
 
 
 
