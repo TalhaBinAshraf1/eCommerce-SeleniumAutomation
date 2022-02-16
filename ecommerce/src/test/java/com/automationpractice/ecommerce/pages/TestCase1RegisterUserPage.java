@@ -1,5 +1,6 @@
 package com.automationpractice.ecommerce.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -31,5 +32,11 @@ public class TestCase1RegisterUserPage extends BasePage {
     public WebElement emailInputFieldInSignUpForm;
     public WebElement getEmailInputFieldInSignUpForm() {
         return emailInputFieldInSignUpForm;
+    }
+
+    @FindBy(css = ".signup-form > form[method='post'] > .btn.btn-default")
+    public WebElement signupButton;
+    public WebElement getSignupButton() {
+        return signupButton;
     }
 }
