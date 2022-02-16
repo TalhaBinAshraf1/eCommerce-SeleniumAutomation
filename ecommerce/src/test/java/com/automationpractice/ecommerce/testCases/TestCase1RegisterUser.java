@@ -13,18 +13,18 @@ public class TestCase1RegisterUser extends BaseClass {
 
         TestCase1RegisterUserPage  tc1rup =new TestCase1RegisterUserPage(driver);
 
-        //TC-1 HOME URL Validation
+        //TC-3  HOME URL Validation / Verify that home page is visible successfully
         String baseLink = driver.getCurrentUrl();
         System.out.println("Given "+baseLink);
         Assert.assertEquals(baseLink, Data.HOME_PAGE_URL);
         System.out.println("Home URL is validate");
 
 
-        //TC-2 Click on 'Signup / Login' button
+        //TC-4 Click on 'Signup / Login' button
         tc1rup.getSignInButton().click();
         System.out.println("Sign in Button Clicked");
 
-        //TC-3 Verify 'New User Signup!' is visible
+        //TC-5 Verify 'New User Signup!' is visible
         if (tc1rup.getNewUserSignupText().isDisplayed())
         {
             String newUserSignupText= tc1rup.getNewUserSignupText().getText();
@@ -36,10 +36,10 @@ public class TestCase1RegisterUser extends BaseClass {
         }
         sleepTest(2000);
 
-        //TC -4 Enter name and email address
+        //TC -6 Enter name and email address
         if (tc1rup.getNameInputFieldInSignUpForm().isDisplayed())
         {
-          tc1rup.getNameInputFieldInSignUpForm().sendKeys("User123");
+          tc1rup.getNameInputFieldInSignUpForm().sendKeys(Data.DEMO_USER_NAME);
         }
         else {
             System.out.println(tc1rup.getNameInputFieldInSignUpForm() + Data.NEGATIVE_ERROR_MASSAGE);
@@ -48,12 +48,25 @@ public class TestCase1RegisterUser extends BaseClass {
 
         if (tc1rup.getEmailInputFieldInSignUpForm().isDisplayed())
         {
-            tc1rup.getEmailInputFieldInSignUpForm().sendKeys("User123@testmail.com");
+            tc1rup.getEmailInputFieldInSignUpForm().sendKeys(Data.DEMO_EMAIL);
         }
         else {
             System.out.println(tc1rup.getEmailInputFieldInSignUpForm() + Data.NEGATIVE_ERROR_MASSAGE);
         }
         sleepTest(2000);
+
+        //7. Click 'Signup' button
+
+        if(tc1rup.getSignupButton().isDisplayed()){
+            String signupButtonText= tc1rup.getSignupButton().getText();
+            Assert.assertEquals(Data.SIGNUP_BUTTON_TEXT,signupButtonText);
+            System.out.println( "✔" + signupButtonText + "✔" + Data.IS_VISIBLE);
+        }
+        else {
+            System.out.println(Data.NEGATIVE_ERROR_MASSAGE);
+        }
+        sleepTest(2000);
+
 
     }
 
