@@ -11,7 +11,7 @@ public class Data {
 
     //BaseURL
     public static final String  BASE_URL = "https://www.automationexercise.com/";
-    public static final String  HOME_PAGE_URL = "https://www.automationexercise.com/";
+    public static final String  LOGIN_PAGE_URL = "login";
 
     //Test Case 1: Register User
     public static final String NEW_USER_SIGNUP_TEXT = "New User Signup!";
@@ -20,7 +20,10 @@ public class Data {
     public static final String SIGNUP_BUTTON_TEXT = "Signup";
 
     //Email and Password
-    public static final String DEMO_USER_NAME= "User123";
-    public static final String DEMO_EMAIL= "User123@testmail.com";
+    public static final String DEMO_USER_NAME= "test012";
+    public static final String DEMO_EMAIL= "test012@gmail.com";
+
+    //signup
+    public static final String ENTER_ACCOUNT_INFORMATION = "ENTER ACCOUNT INFORMATION";
 
 }

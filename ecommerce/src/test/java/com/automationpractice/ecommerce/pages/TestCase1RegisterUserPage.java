@@ -39,4 +39,17 @@ public class TestCase1RegisterUserPage extends BasePage {
     public WebElement getSignupButton() {
         return signupButton;
     }
+
+    @FindBy(css = ".login-form > .text-center.title > b")
+    public WebElement enterAccountInformation;
+    public WebElement getEnterAccountInformation() {
+        return enterAccountInformation;
+    }
+
+    @FindBy(css = "input#password")
+    public WebElement passwordInputField;
+    public WebElement getPasswordInputField() {
+        return passwordInputField;
+    }
+
 }
