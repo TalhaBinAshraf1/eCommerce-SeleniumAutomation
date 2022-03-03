@@ -1,9 +1,12 @@
 package com.automationpractice.ecommerce.pages;
 
+import com.automationpractice.ecommerce.utilities.Data;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 
 public class TestCase1RegisterUserPage extends BasePage {
     public TestCase1RegisterUserPage(WebDriver driver) {
@@ -51,5 +54,21 @@ public class TestCase1RegisterUserPage extends BasePage {
     public WebElement getPasswordInputField() {
         return passwordInputField;
     }
+
+    @FindBy(css = "select#days")
+    public WebElement dayDropdown;
+    public WebElement getDayDropdown() {
+        return dayDropdown;
+    }
+
+    public WebElement getElement(By locator){
+        return  driver.findElement(locator);
+    }
+    public void  dropDownSelect(By locator,String dropDownText ){
+        Select select =new Select(getElement(locator));
+        select.selectByVisibleText(dropDownText);
+        Assert.assertEquals(dropDownText,dropDownText);
+    }
+
 
 }

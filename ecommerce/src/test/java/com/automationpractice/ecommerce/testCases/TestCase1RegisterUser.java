@@ -4,11 +4,14 @@ package com.automationpractice.ecommerce.testCases;
 import com.automationpractice.ecommerce.pages.TestCase1RegisterUserPage;
 import com.automationpractice.ecommerce.utilities.Data;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TestCase1RegisterUser extends BaseClass {
+
 
     @Test
     public void testCase1RegisterUser(){
@@ -120,8 +123,21 @@ public class TestCase1RegisterUser extends BaseClass {
         }
         sleepTest(2000);
 
+        By day = By.cssSelector("select#days");
+        By month =By.cssSelector("select#months");
+        By year = By.cssSelector("select#years");
 
+        tc1rup.dropDownSelect(day , "10");
+        tc1rup.dropDownSelect(day,"28");
+        tc1rup.dropDownSelect(month,"March");
+        tc1rup.dropDownSelect(month,"April");
+        tc1rup.dropDownSelect(month,"May");
+        tc1rup.dropDownSelect(month,"August");
+        tc1rup.dropDownSelect(month,"November");
+        tc1rup.dropDownSelect(year,"2017");
+        tc1rup.dropDownSelect(year,"2020");
+
+        sleepTest(2000);
     }
-
 
 }
