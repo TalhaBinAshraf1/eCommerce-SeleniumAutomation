@@ -129,13 +129,32 @@ public class TestCase1RegisterUser extends BaseClass {
 
         tc1rup.dropDownSelect(day , "10");
         tc1rup.dropDownSelect(day,"28");
+
         tc1rup.dropDownSelect(month,"March");
         tc1rup.dropDownSelect(month,"April");
         tc1rup.dropDownSelect(month,"May");
         tc1rup.dropDownSelect(month,"August");
         tc1rup.dropDownSelect(month,"November");
-        tc1rup.dropDownSelect(year,"2017");
+
+        tc1rup.dropDownSelect(year,"2021");
         tc1rup.dropDownSelect(year,"2020");
+        tc1rup.dropDownSelect(year,"2019");
+        tc1rup.dropDownSelect(year,"2018");
+        tc1rup.dropDownSelect(year,"2017");
+        tc1rup.dropDownSelect(year,"2016");
+        tc1rup.dropDownSelect(year,"2015");
+        tc1rup.dropDownSelect(year,"2014");
+        tc1rup.dropDownSelect(year,"2013");
+        tc1rup.dropDownSelect(year,"2012");
+        tc1rup.dropDownSelect(year,"2011");
+        tc1rup.dropDownSelect(year,"2014");
+        tc1rup.dropDownSelect(year,"2013");
+        tc1rup.dropDownSelect(year,"2012");
+        tc1rup.dropDownSelect(year,"2010");
+
+
+
+
 
         sleepTest(2000);
     }
