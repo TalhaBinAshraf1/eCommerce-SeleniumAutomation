@@ -4,9 +4,7 @@ package com.automationpractice.ecommerce.testCases;
 import com.automationpractice.ecommerce.pages.TestCase1RegisterUserPage;
 import com.automationpractice.ecommerce.utilities.Data;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
