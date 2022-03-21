@@ -21,7 +21,7 @@ public class Data {
 
     //Email and Password
     public static final String DEMO_USER_NAME= "test012";
-    public static final String DEMO_EMAIL= "test012@gmail.com";
+    public static final String DEMO_EMAIL= "alexsmakov@sgisfg.com";
 
     //signup
     public static final String ENTER_ACCOUNT_INFORMATION = "ENTER ACCOUNT INFORMATION";
