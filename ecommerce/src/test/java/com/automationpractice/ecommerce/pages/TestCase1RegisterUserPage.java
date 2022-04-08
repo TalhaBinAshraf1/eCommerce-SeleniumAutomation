@@ -1,6 +1,5 @@
 package com.automationpractice.ecommerce.pages;
 
-import com.automationpractice.ecommerce.utilities.Data;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
