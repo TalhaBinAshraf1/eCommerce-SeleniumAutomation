@@ -5,7 +5,7 @@ public class Data {
     //Static data
     public static final String PHONE_NUMBER = "01763450445";
     public static final String NEGATIVE_ERROR_MASSAGE = " - Element is Not Visible ❌❌❌";
-    public static final String POSETIVE_MASSAGE = "- Element is Visible ✔✔✔ ";
+    public static final String POSITIVE_MASSAGE = "- Element is Visible ✔✔✔ ";
     public static final String CREATE_NEW_ACCOUNT = "Create New Account";
     public static final String IS_VISIBLE = " Text IS Visible " ;
 
