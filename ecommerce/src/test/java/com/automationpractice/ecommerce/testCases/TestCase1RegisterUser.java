@@ -37,7 +37,7 @@ public class TestCase1RegisterUser extends BaseClass {
         if (tc1rup.getNewUserSignupText().isDisplayed())
         {
             String newUserSignupText= tc1rup.getNewUserSignupText().getText();
-            System.out.println(newUserSignupText + Data.POSETIVE_MASSAGE);
+            System.out.println(newUserSignupText + Data.POSITIVE_MASSAGE);
             Assert.assertEquals(Data.NEW_USER_SIGNUP_TEXT,newUserSignupText);
         }
         else {
@@ -81,7 +81,7 @@ public class TestCase1RegisterUser extends BaseClass {
         if (tc1rup.getEnterAccountInformation().isDisplayed())
         {
             String enterAccountInformationText= tc1rup.getEnterAccountInformation().getText();
-            System.out.println(enterAccountInformationText + Data.POSETIVE_MASSAGE);
+            System.out.println(enterAccountInformationText + Data.POSITIVE_MASSAGE);
             Assert.assertEquals(Data.ENTER_ACCOUNT_INFORMATION,enterAccountInformationText);
         }
         else {
@@ -120,6 +120,8 @@ public class TestCase1RegisterUser extends BaseClass {
             System.out.println(Data.NEGATIVE_ERROR_MASSAGE);
         }
         sleepTest(2000);
+
+        //TC - 9. Fill details: Title, Name, Email, Password, Date of birth
 
         By day = By.cssSelector("select#days");
         By month =By.cssSelector("select#months");
