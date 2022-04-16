@@ -21,9 +21,25 @@ public class Data {
 
     //Email and Password
     public static final String DEMO_USER_NAME= "test012";
-    public static final String DEMO_EMAIL= "alexsmakov@sgisfg.com";
+    public static final String DEMO_EMAIL= "alexsmakovtk@sgisfg.com";
+    public static final String DEMO_PASSWORD= "Asdf1234";
+
 
     //signup
     public static final String ENTER_ACCOUNT_INFORMATION = "ENTER ACCOUNT INFORMATION";
+
+    //Address Infornation
+    public static final String FIRST_NAME= "Alex";
+    public static final String LAST_NAME= "Smakov";
+    public static final String COMPANY= "TestCompany";
+    public static final String ADDRESS= "145-W,Troy,Newyork,USA";
+    public static final String ADDRESS2= "145-W,Newyork ";
+    public static final String STATE= "NewYork";
+    public static final String CITY= "Troy";
+    public static final String ZIPCODE= "1256";
+    public static final String MOBILE_NUMBER= "+01235525";
+
+    //Create Account Button
+    public static final String  CREATE_BUTTON_TEXT = "Create Account";
 
 }
