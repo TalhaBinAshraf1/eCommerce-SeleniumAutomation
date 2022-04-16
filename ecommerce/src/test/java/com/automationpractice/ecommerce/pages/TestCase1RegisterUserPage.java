@@ -69,5 +69,75 @@ public class TestCase1RegisterUserPage extends BasePage {
         Assert.assertEquals(dropDownText,dropDownText);
     }
 
+    @FindBy(css = "input#newsletter")
+    public WebElement newsletterCheckbox;
+    public WebElement getNewsletterCheckbox() {
+        return newsletterCheckbox;
+    }
 
+    @FindBy(css = "input#optin")
+    public WebElement receiveSpecialOfferCheckbox;
+    public WebElement getReceiveSpecialOfferCheckbox() {
+        return receiveSpecialOfferCheckbox;
+    }
+
+    @FindBy(css = "#first_name")
+    public WebElement firstNameInputField;
+    public WebElement getFirstNameInputField() {
+        return firstNameInputField;
+    }
+
+    @FindBy(css = "input#last_name")
+    public WebElement lastNameInputField;
+    public WebElement getLastNameInputField() {
+        return lastNameInputField;
+    }
+
+    @FindBy(css = "input#company")
+    public WebElement companyNameInputField;
+    public WebElement getCompanyNameInputField() {
+        return companyNameInputField;
+    }
+
+    @FindBy(css = "input[name='address1']")
+    public WebElement adress1InputField;
+    public WebElement getAdress1InputField() {
+        return adress1InputField;
+    }
+
+    @FindBy(css = "input[name='address2']")
+    public WebElement adress2InputField;
+    public WebElement getAdress2InputField() {
+        return adress2InputField;
+    }
+
+    @FindBy(css = "input#state")
+    public WebElement stateInputField;
+    public WebElement getStateInputField() {
+        return stateInputField;
+    }
+
+    @FindBy(css = "input#city")
+    public WebElement cityInputField;
+    public WebElement getCityInputField() {
+        return cityInputField;
+    }
+
+    @FindBy(css = "input#zipcode")
+    public WebElement zipCodeInputField;
+    public WebElement getZipCodeInputField() {
+        return zipCodeInputField;
+    }
+
+    @FindBy(css = "input#mobile_number")
+    public WebElement mobileNumberInputField;
+    public WebElement getMobileNumberInputField() {
+        return mobileNumberInputField;
+    }
+
+    @FindBy(css = "section#form > .container form[method='post'] > .btn.btn-default")
+    public WebElement createAccountButton;
+    public WebElement getCreateAccountButton() {
+        return createAccountButton;
+    }
 }

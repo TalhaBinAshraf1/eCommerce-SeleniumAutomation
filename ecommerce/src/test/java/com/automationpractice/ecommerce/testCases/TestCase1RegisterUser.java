@@ -4,6 +4,7 @@ package com.automationpractice.ecommerce.testCases;
 import com.automationpractice.ecommerce.pages.TestCase1RegisterUserPage;
 import com.automationpractice.ecommerce.utilities.Data;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -113,13 +114,16 @@ public class TestCase1RegisterUser extends BaseClass {
         //TC - 8. Verify that 'Password Input Field' is visible
         if (tc1rup.getPasswordInputField().isDisplayed())
         {
-            tc1rup.getPasswordInputField().sendKeys("test01234");
+            tc1rup.getPasswordInputField().sendKeys(Data.DEMO_PASSWORD);
             System.out.println("Password Inputted Successfully");
         }
         else {
             System.out.println(Data.NEGATIVE_ERROR_MASSAGE);
         }
         sleepTest(2000);
+
+        JavascriptExecutor js = (JavascriptExecutor)driver;
+        js.executeScript("window.scrollBy(0,500)");
 
         //TC - 9. Fill details: Title, Name, Email, Password, Date of birth
 
@@ -152,11 +156,165 @@ public class TestCase1RegisterUser extends BaseClass {
         tc1rup.dropDownSelect(year,"2012");
         tc1rup.dropDownSelect(year,"2010");
 
-
-
-
-
         sleepTest(2000);
+
+
+        // TC - 10 Select checkbox 'Sign up for our newsletter!'
+
+        tc1rup.getNewsletterCheckbox().click();
+        if(tc1rup.getNewsletterCheckbox().isSelected())
+        {
+            System.out.println(Data.POSITIVE_MASSAGE+ "Sign-Up Checkbox Selected");
+        }
+        else {
+            System.out.println(Data.NEGATIVE_ERROR_MASSAGE);
+        }
+        sleepTest( 1000);
+
+        // TC - 11 Select checkbox 'Receive special offers from our partners!'
+
+        tc1rup.getReceiveSpecialOfferCheckbox().click();
+        if(tc1rup.getReceiveSpecialOfferCheckbox().isSelected())
+        {
+            System.out.println(Data.POSITIVE_MASSAGE+ "Receive Checkbox Selected");
+        }
+        else {
+            System.out.println(Data.NEGATIVE_ERROR_MASSAGE);
+        }
+        sleepTest( 1000);
+
+        //TC - 12 Fill details: First name, Last name, Company, Address, Address2, Country, State, City, Zipcode, Mobile Number
+
+        //First Name
+        if (tc1rup.getFirstNameInputField().isDisplayed())
+        {
+            tc1rup.getFirstNameInputField().sendKeys(Data.FIRST_NAME);
+            System.out.println("First Name Inputted Successfully");
+        }
+        else {
+            System.out.println(Data.NEGATIVE_ERROR_MASSAGE);
+        }
+        sleepTest(2000);
+
+       //Last Name
+        if (tc1rup.getLastNameInputField().isDisplayed())
+        {
+            tc1rup.getLastNameInputField().sendKeys(Data.LAST_NAME);
+            System.out.println("last Name Inputted Successfully");
+        }
+        else {
+            System.out.println(Data.NEGATIVE_ERROR_MASSAGE);
+        }
+        sleepTest(2000);
+
+
+        //Company Name
+        if (tc1rup.getCompanyNameInputField().isDisplayed())
+        {
+            tc1rup.getCompanyNameInputField().sendKeys(Data.COMPANY);
+            System.out.println("Company Name Inputted Successfully");
+        }
+        else {
+            System.out.println(Data.NEGATIVE_ERROR_MASSAGE);
+        }
+        sleepTest(2000);
+
+
+
+        //Address
+        if (tc1rup.getAdress1InputField().isDisplayed())
+        {
+            tc1rup.getAdress1InputField().sendKeys(Data.ADDRESS);
+            System.out.println("Adress Inputted Successfully");
+        }
+        else {
+            System.out.println(Data.NEGATIVE_ERROR_MASSAGE);
+        }
+        sleepTest(2000);
+
+
+        //Address 2
+        if (tc1rup.getAdress2InputField().isDisplayed())
+        {
+            tc1rup.getAdress2InputField().sendKeys(Data.ADDRESS2);
+            System.out.println("Adress 2 Inputted Successfully");
+        }
+        else {
+            System.out.println(Data.NEGATIVE_ERROR_MASSAGE);
+        }
+        sleepTest(2000);
+
+        //Country DropDown
+
+        By country = By.cssSelector("select#country");
+
+        tc1rup.dropDownSelect(country , "India");
+        tc1rup.dropDownSelect(country,"Canada");
+        tc1rup.dropDownSelect(country,"Australia");
+        tc1rup.dropDownSelect(country,"New Zealand");
+        tc1rup.dropDownSelect(country,"Singapore");
+        tc1rup.dropDownSelect(country,"United States");
+
+        // State
+        if (tc1rup.getStateInputField().isDisplayed())
+        {
+            tc1rup.getStateInputField().sendKeys(Data.STATE);
+            System.out.println("State Inputted Successfully");
+        }
+        else {
+            System.out.println(Data.NEGATIVE_ERROR_MASSAGE);
+        }
+        sleepTest(2000);
+
+        // City
+        if (tc1rup.getCityInputField().isDisplayed())
+        {
+            tc1rup.getCityInputField().sendKeys(Data.CITY);
+            System.out.println("Zipcode Inputted Successfully");
+        }
+        else {
+            System.out.println(Data.NEGATIVE_ERROR_MASSAGE);
+        }
+        sleepTest(2000);
+        js.executeScript("window.scrollBy(0,300)");
+
+
+
+        // Zipcode
+        if (tc1rup.getZipCodeInputField().isDisplayed())
+        {
+            tc1rup.getZipCodeInputField().sendKeys(Data.ZIPCODE);
+            System.out.println("Zipcode Inputted Successfully");
+        }
+        else {
+            System.out.println(Data.NEGATIVE_ERROR_MASSAGE);
+        }
+        sleepTest(2000);
+
+        // Mobile Number
+        if (tc1rup.getMobileNumberInputField().isDisplayed())
+        {
+            tc1rup.getMobileNumberInputField().sendKeys(Data.MOBILE_NUMBER);
+            System.out.println("Mobile Number Inputted Successfully");
+        }
+        else {
+            System.out.println(Data.NEGATIVE_ERROR_MASSAGE);
+        }
+        sleepTest(2000);
+
+        //TC - 13  Click 'Create Account button'
+
+        if(tc1rup.getCreateAccountButton().isDisplayed()){
+            String createAccountButtonText= tc1rup.getCreateAccountButton().getText();
+            Assert.assertEquals(Data.CREATE_BUTTON_TEXT,createAccountButtonText);
+            System.out.println( "✔" + createAccountButtonText + "✔" + Data.IS_VISIBLE);
+            //tc1rup.getCreateAccountButton().click();
+        }
+        else {
+            System.out.println(Data.NEGATIVE_ERROR_MASSAGE);
+        }
+        sleepTest(2000);
+
     }
 
 }
