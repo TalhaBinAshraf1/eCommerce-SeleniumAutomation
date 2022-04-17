@@ -21,7 +21,7 @@ public class Data {
 
     //Email and Password
     public static final String DEMO_USER_NAME= "test012";
-    public static final String DEMO_EMAIL= "alexsmakovtk@sgisfg.com";
+    public static final String DEMO_EMAIL= "alexsmkovtkvtz@sgisfg.com";
     public static final String DEMO_PASSWORD= "Asdf1234";
 
 
@@ -41,5 +41,11 @@ public class Data {
 
     //Create Account Button
     public static final String  CREATE_BUTTON_TEXT = "Create Account";
+
+    //Account Created text
+    public static final String  ACCOUNT_CREATED_TEXT = "ACCOUNT CREATED!";
+
+    //Logged In As User Name  text
+    public static final String  LOGGED_IN_AS_USER_TEXT = "Logged in as test012";
 
 }
