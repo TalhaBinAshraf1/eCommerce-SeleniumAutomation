@@ -347,6 +347,7 @@ public class TestCase1RegisterUser extends BaseClass {
         //TC -17 Account
         tc1rup.getDeleteAccountButton().click();
 
+        //TC- 18
         WebElement delete = driver.findElement(By.cssSelector(".button-form > .btn.btn-danger"));
         delete.click();
         sleepTest(2000);
