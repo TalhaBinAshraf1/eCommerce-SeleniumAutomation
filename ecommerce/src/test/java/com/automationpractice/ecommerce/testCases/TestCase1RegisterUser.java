@@ -270,7 +270,7 @@ public class TestCase1RegisterUser extends BaseClass {
         if (tc1rup.getCityInputField().isDisplayed())
         {
             tc1rup.getCityInputField().sendKeys(Data.CITY);
-            System.out.println("Zipcode Inputted Successfully");
+            System.out.println("City Inputted Successfully");
         }
         else {
             System.out.println(Data.NEGATIVE_ERROR_MASSAGE);
@@ -308,12 +308,49 @@ public class TestCase1RegisterUser extends BaseClass {
             String createAccountButtonText= tc1rup.getCreateAccountButton().getText();
             Assert.assertEquals(Data.CREATE_BUTTON_TEXT,createAccountButtonText);
             System.out.println( "✔" + createAccountButtonText + "✔" + Data.IS_VISIBLE);
-            //tc1rup.getCreateAccountButton().click();
+            tc1rup.getCreateAccountButton().click();
         }
         else {
             System.out.println(Data.NEGATIVE_ERROR_MASSAGE);
         }
         sleepTest(2000);
+
+
+        //TC - 14 Verify that 'ACCOUNT CREATED!' is visible
+        if (tc1rup.getAccountCreatedText().isDisplayed())
+        {
+            String accountCreatedText= tc1rup.getAccountCreatedText().getText();
+            System.out.println(accountCreatedText + Data.POSITIVE_MASSAGE);
+            Assert.assertEquals(Data.ACCOUNT_CREATED_TEXT,accountCreatedText);
+        }
+        else {
+            System.out.println(Data.NEGATIVE_ERROR_MASSAGE);
+        }
+        sleepTest(2000);
+
+
+        //TC - 15 Click on Continue Button
+        tc1rup.getContinueButton().click();
+
+        //TC - 16 Verify that 'Logged in as username' is visible
+        if (tc1rup.getLoggedInAsUsernameText().isDisplayed())
+        {
+            String loggedInAsUserText= tc1rup.getLoggedInAsUsernameText().getText();
+            System.out.println(loggedInAsUserText + Data.POSITIVE_MASSAGE);
+            Assert.assertEquals(Data.LOGGED_IN_AS_USER_TEXT,loggedInAsUserText);
+        }
+        else {
+            System.out.println(Data.NEGATIVE_ERROR_MASSAGE);
+        }
+        sleepTest(2000);
+
+        //TC -17 Account
+        tc1rup.getDeleteAccountButton().click();
+
+        WebElement delete = driver.findElement(By.cssSelector(".button-form > .btn.btn-danger"));
+        delete.click();
+        sleepTest(2000);
+
 
     }
 

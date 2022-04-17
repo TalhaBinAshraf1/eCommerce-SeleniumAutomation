@@ -140,4 +140,29 @@ public class TestCase1RegisterUserPage extends BasePage {
     public WebElement getCreateAccountButton() {
         return createAccountButton;
     }
+
+    @FindBy(css = ".text-center.title > b")
+    public WebElement accountCreatedText;
+    public WebElement getAccountCreatedText() {
+        return accountCreatedText;
+    }
+
+    @FindBy(css = ".btn.btn-primary")
+    public WebElement continueButton;
+    public WebElement getContinueButton() {
+        return continueButton;
+    }
+
+    @FindBy(css = "li:nth-of-type(9) > a")
+    public WebElement loggedInAsUsernameText;
+    public WebElement getLoggedInAsUsernameText() {
+        return loggedInAsUsernameText;
+    }
+
+
+    @FindBy(css = ".nav.navbar-nav > li:nth-of-type(5) > a")
+    public WebElement deleteAccountButton;
+    public WebElement getDeleteAccountButton() {
+        return deleteAccountButton;
+    }
 }
