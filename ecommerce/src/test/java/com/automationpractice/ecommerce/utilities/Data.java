@@ -2,6 +2,11 @@ package com.automationpractice.ecommerce.utilities;
 
 public class Data {
 
+
+    //BaseURL
+    public static final String  BASE_URL = "https://www.automationexercise.com/";
+    public static final String  LOGIN_PAGE_URL = "login";
+
     //Static data
     public static final String PHONE_NUMBER = "01763450445";
     public static final String NEGATIVE_ERROR_MASSAGE = " - Element is Not Visible ❌❌❌";
@@ -9,26 +14,22 @@ public class Data {
     public static final String CREATE_NEW_ACCOUNT = "Create New Account";
     public static final String IS_VISIBLE = " Text IS Visible " ;
 
-    //BaseURL
-    public static final String  BASE_URL = "https://www.automationexercise.com/";
-    public static final String  LOGIN_PAGE_URL = "login";
 
-    //Test Case 1: Register User
+
+    //                      ✅✅✅ Test Case 1: Register User  ✅✅✅
+
+
+
     public static final String NEW_USER_SIGNUP_TEXT = "New User Signup!";
-
-    //Test Case 6 : Signup button validation
+    //Signup button validation
     public static final String SIGNUP_BUTTON_TEXT = "Signup";
-
     //Email and Password
     public static final String DEMO_USER_NAME= "test012";
-    public static final String DEMO_EMAIL= "alexsmkovtkvtz@sgisfg.com";
+    public static final String DEMO_EMAIL= "alexsmkovtkvtzb4@sgisfg.com";
     public static final String DEMO_PASSWORD= "Asdf1234";
-
-
     //signup
     public static final String ENTER_ACCOUNT_INFORMATION = "ENTER ACCOUNT INFORMATION";
-
-    //Address Infornation
+    //Address Information
     public static final String FIRST_NAME= "Alex";
     public static final String LAST_NAME= "Smakov";
     public static final String COMPANY= "TestCompany";
@@ -38,14 +39,30 @@ public class Data {
     public static final String CITY= "Troy";
     public static final String ZIPCODE= "1256";
     public static final String MOBILE_NUMBER= "+01235525";
-
     //Create Account Button
     public static final String  CREATE_BUTTON_TEXT = "Create Account";
-
     //Account Created text
     public static final String  ACCOUNT_CREATED_TEXT = "ACCOUNT CREATED!";
-
     //Logged In As User Name  text
     public static final String  LOGGED_IN_AS_USER_TEXT = "Logged in as test012";
+
+
+
+    //                      ✅✅✅ Test Case 2 : Login User with correct email and password  ✅✅✅
+
+
+
+    public static final String  LOGIN_TO_YOUR_ACCoUNT_TEXT = "Login to your account";
+
+
+
+    //                      ✅✅✅ Test Case 3 : Login User with incorrect email and password  ✅✅✅
+
+    public static final String DEMO_INCORRECT_EMAIL= "alexsmkovtkvtzb420@sgisfg.com";
+    public static final String DEMO_INCORRECT_PASSWORD= "Asdfgh1234";
+    public static final String YOUR_EMAIL_OR_PASSWORD_IS_INCORRECT= "Your email or password is incorrect!";
+
+
+
 
 }
