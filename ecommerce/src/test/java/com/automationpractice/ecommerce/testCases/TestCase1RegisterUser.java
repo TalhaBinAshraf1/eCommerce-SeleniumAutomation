@@ -11,17 +11,10 @@ import org.testng.annotations.Test;
 
 public class TestCase1RegisterUser extends BaseClass {
 
-
     @Test
     public void testCase1RegisterUser(){
 
         TestCase1RegisterUserPage  tc1rup =new TestCase1RegisterUserPage(driver);
-
-        //TC-3  HOME URL Validation / Verify that home page is visible successfully
-        String baseLink = driver.getCurrentUrl();
-        System.out.println("Given "+baseLink);
-        Assert.assertEquals(baseLink, Data.BASE_URL);
-        System.out.println("Home URL is validate");
 
         //TC-4 Click on 'Signup / Login' button
         tc1rup.getSignInButton().click();
@@ -348,8 +341,8 @@ public class TestCase1RegisterUser extends BaseClass {
         tc1rup.getDeleteAccountButton().click();
 
         //TC- 18
-        WebElement delete = driver.findElement(By.cssSelector(".button-form > .btn.btn-danger"));
-        delete.click();
+
+        tc1rup.getDeleteButton().click();
         sleepTest(2000);
 
 

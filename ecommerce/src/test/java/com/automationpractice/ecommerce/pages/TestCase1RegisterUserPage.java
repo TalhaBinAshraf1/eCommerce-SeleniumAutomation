@@ -159,10 +159,17 @@ public class TestCase1RegisterUserPage extends BasePage {
         return loggedInAsUsernameText;
     }
 
-
     @FindBy(css = ".nav.navbar-nav > li:nth-of-type(5) > a")
     public WebElement deleteAccountButton;
     public WebElement getDeleteAccountButton() {
         return deleteAccountButton;
     }
+
+    @FindBy(css = ".button-form > .btn.btn-danger")
+    public WebElement deleteButton;
+    public WebElement getDeleteButton() {
+        return deleteButton;
+    }
+
+
 }

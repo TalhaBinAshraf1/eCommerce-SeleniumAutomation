@@ -1,9 +1,11 @@
 package com.automationpractice.ecommerce.testCases;
 
+import com.automationpractice.ecommerce.utilities.Data;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
@@ -59,7 +61,14 @@ public class BaseClass {
     @BeforeMethod
         public void beforeMethod() {
         driver.navigate().to("https://www.automationexercise.com/");
-         sleepTest(2000);
+         sleepTest(1000);
+        //TC-3  HOME URL Validation / Verify that home page is visible successfully
+        String baseLink = driver.getCurrentUrl();
+        System.out.println("Given "+baseLink);
+        Assert.assertEquals(baseLink, Data.BASE_URL);
+        System.out.println("Home URL is validate");
+        sleepTest(1000);
+
         }
     @AfterMethod
     public void afterTest(){
