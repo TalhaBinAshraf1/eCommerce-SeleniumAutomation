@@ -41,6 +41,8 @@ public class TestCase4LogoutUser extends BaseClass{
 
 //     TC - 7. Click 'login' button
         tc4lup.getLoginButton().click();
+//        String bgColor=tc4lup.getLoginButton().getCssValue("background-color");
+//        System.out.println("Submit Button background color is: "+ bgColor);
 
 //     TC - 8. Verify that 'Logged in as username' is visible
 

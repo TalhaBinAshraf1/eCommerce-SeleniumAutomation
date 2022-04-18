@@ -16,7 +16,7 @@ public class Data {
 
 
 
-    //                      ✅✅✅ Test Case 1: Register User  ✅✅✅
+    //                      ✅✅✅  Test Case 1: Register User  ✅✅✅
 
 
 
@@ -48,7 +48,7 @@ public class Data {
 
 
 
-    //                      ✅✅✅ Test Case 2 : Login User with correct email and password  ✅✅✅
+    //                      ✅✅✅  Test Case 2 : Login User with correct email and password  ✅✅✅
 
 
 
@@ -56,11 +56,36 @@ public class Data {
 
 
 
-    //                      ✅✅✅ Test Case 3 : Login User with incorrect email and password  ✅✅✅
+    //                      ✅✅✅  Test Case 3 : Login User with incorrect email and password  ✅✅✅
 
     public static final String DEMO_INCORRECT_EMAIL= "alexsmkovtkvtzb420@sgisfg.com";
     public static final String DEMO_INCORRECT_PASSWORD= "Asdfgh1234";
     public static final String YOUR_EMAIL_OR_PASSWORD_IS_INCORRECT= "Your email or password is incorrect!";
+
+
+
+    //                      ✅✅✅  Test Case 5: Register User with existing email  ✅✅✅
+
+    public static final String EMAIL_ADDRESS_ALREADY_EXIST= "Email Address already exist!";
+
+
+
+    //                      ✅✅✅ Test Case 6: Contact Us Form  ✅✅✅
+
+    public static final String GET_IN_TOUCH= "GET IN TOUCH";
+    public static final String NAME= "AB Zaman";
+    public static final String EMAIL= "test0123455@testmail.com";
+    public static final String SUBJECT= "Test Ongoing In Selenium ";
+    public static final String MESSAGE= "Test Ongoing In Selenium ";
+    public static final String SUCESS_MESSAGE= "Success! Your details have been submitted successfully.";
+
+
+
+//                      ✅✅✅ Test Case 7: Verify Test Cases Page  ✅✅✅
+
+    public static final String TEST_CASE_TEXT= "Test Cases";
+    public static final String TEST_CASE_PAGE_LINK= "https://www.automationexercise.com/test_cases";
+
 
 
 
