@@ -88,6 +88,13 @@ public class Data {
 
 
 
+//                      ✅✅✅  Test Case 8: Verify All Products and product detail page  ✅✅✅
+
+    public static final String PRODUCTS_TEXT= "Products";
+    public static final String PRODUCTS_PAGE_LINK= "https://www.automationexercise.com/products";
+    public static final String ALL_PRODUCTS_TEXT= "ALL PRODUCTS";
+
+
 
 
 }
