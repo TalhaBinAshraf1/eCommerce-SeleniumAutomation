@@ -2,8 +2,13 @@ package com.automationpractice.ecommerce.testCases;
 
 import com.automationpractice.ecommerce.pages.TestCase8VerifyAllProductsAndProductDetailPage_Page;
 import com.automationpractice.ecommerce.utilities.Data;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import java.util.List;
 
 public class TestCase8VerifyAllProductsAndProductDetailPage extends BaseClass{
 
@@ -41,15 +46,28 @@ public class TestCase8VerifyAllProductsAndProductDetailPage extends BaseClass{
         if (tc8vappdp.getAllProductText().isDisplayed())
         {
             String allProductText = tc8vappdp.getAllProductText().getText();
-            System.out.printf(allProductText + Data.POSITIVE_MASSAGE);
+            System.out.println(allProductText + Data.POSITIVE_MASSAGE);
             Assert.assertEquals(allProductText,Data.ALL_PRODUCTS_TEXT);
             sleepTest(1000);
         }else {
-            System.out.printf(Data.NEGATIVE_ERROR_MASSAGE);
+            System.out.println(Data.NEGATIVE_ERROR_MASSAGE);
         }
 
+        JavascriptExecutor js = (JavascriptExecutor)driver;
+        js.executeScript("window.scrollBy(0,500)");
 
 //    TC - 6. The products list is visible
+        tc8vappdp.getWomen().click();
+        List<WebElement> listElement = driver.findElements(By.cssSelector("div#Women ul > li "));
+        for(int i =0;i<listElement.size();i++) {
+            String elementText = listElement.get(i).getText();
+            System.out.println(elementText);
+            Assert.assertTrue(true,"DRESS");
+            Assert.assertTrue(true,"TOPS");
+            Assert.assertTrue(true,"Saree");
+        }
+        sleepTest(1000);
+
 //    TC - 7. Click on 'View Product' of first product
 //    TC - 8. User is landed to product detail page
 //    TC - 9. Verify that detail detail is visible: product name, category, price, availability, condition, brand

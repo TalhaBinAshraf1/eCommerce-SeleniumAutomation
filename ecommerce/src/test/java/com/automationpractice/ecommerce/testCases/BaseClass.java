@@ -55,6 +55,7 @@ public class BaseClass {
 
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        driver.manage().deleteAllCookies();
     }
 
 
@@ -62,6 +63,7 @@ public class BaseClass {
         public void beforeMethod() {
         driver.navigate().to("https://www.automationexercise.com/");
          sleepTest(1000);
+
         //TC-3  HOME URL Validation / Verify that home page is visible successfully
         String baseLink = driver.getCurrentUrl();
         System.out.println("Given "+baseLink);

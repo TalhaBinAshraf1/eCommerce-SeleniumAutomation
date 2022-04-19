@@ -21,11 +21,16 @@ public class TestCase8VerifyAllProductsAndProductDetailPage_Page extends BasePag
         return allProductText;
     }
 
-
     @FindBy(css="body > section:nth-child(21) > div > div > div.col-sm-9.padding-right > div > div")
     public WebElement allProductList;
     public WebElement getAllProductList(){
         return allProductList;
+    }
+
+    @FindBy(css="div:nth-of-type(1) > .panel-heading > .panel-title > a")
+    public WebElement women;
+    public WebElement getWomen(){
+        return women;
     }
 
 
