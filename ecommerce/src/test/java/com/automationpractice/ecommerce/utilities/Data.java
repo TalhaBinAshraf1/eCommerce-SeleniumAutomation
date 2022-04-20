@@ -93,6 +93,22 @@ public class Data {
     public static final String PRODUCTS_TEXT= "Products";
     public static final String PRODUCTS_PAGE_LINK= "https://www.automationexercise.com/products";
     public static final String ALL_PRODUCTS_TEXT= "ALL PRODUCTS";
+    public static final String VIEW_PRODUCTS_TEXT= "View Product";
+    public static final String FIRST_PRODUCT_LANDING_PAGE= "https://www.automationexercise.com/product_details/1";
+
+
+
+    //                      ✅✅✅      Test Case 9: Search Product  ✅✅✅
+
+    public static final String PRODUCTS_NAME= "Blue Top";
+
+
+//                      ✅✅✅      Test Case 10: Verify Subscription in home page  ✅✅✅
+
+
+    public static final String DEMO_EMAIL_ADDRESS= "test01234@testmail.com";
+    public static final String SUBSCRIPTION_TEXT= "SUBSCRIPTION";
+
 
 
 

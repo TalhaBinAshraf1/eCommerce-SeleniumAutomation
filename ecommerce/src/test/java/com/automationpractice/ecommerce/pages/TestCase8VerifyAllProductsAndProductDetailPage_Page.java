@@ -33,5 +33,47 @@ public class TestCase8VerifyAllProductsAndProductDetailPage_Page extends BasePag
         return women;
     }
 
+    @FindBy(css="div:nth-of-type(2) > .product-image-wrapper > .choose > .nav.nav-justified.nav-pills")
+    public WebElement viewProduct;
+    public WebElement getViewProduct(){
+        return viewProduct;
+    }
+
+    @FindBy(css=".product-information > h2")
+    public WebElement productName;
+    public WebElement getProductName(){
+        return productName;
+    }
+
+    @FindBy(css=".product-information > p:nth-of-type(1)")
+    public WebElement categoryOfPrduct;
+    public WebElement getCategoryOfPrduct(){
+        return categoryOfPrduct;
+    }
+
+    @FindBy(css=".product-information span:nth-child(5) span")
+    public WebElement productPrice;
+    public WebElement getProductPrice(){
+        return productPrice;
+    }
+
+    @FindBy(css=".product-information > p:nth-of-type(2)")
+    public WebElement productAvailability;
+    public WebElement getProductAvailability(){
+        return productAvailability;
+    }
+
+    @FindBy(css=".product-information > p:nth-of-type(2)")
+    public WebElement productCondition;
+    public WebElement getProductCondition(){
+        return productCondition;
+    }
+
+    @FindBy(css=".product-information > p:nth-of-type(4)")
+    public WebElement productBrand;
+    public WebElement getProductBrand(){
+        return productBrand;
+    }
+
 
 }
