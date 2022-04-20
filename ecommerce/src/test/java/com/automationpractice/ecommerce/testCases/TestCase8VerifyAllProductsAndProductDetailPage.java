@@ -69,8 +69,32 @@ public class TestCase8VerifyAllProductsAndProductDetailPage extends BaseClass{
         sleepTest(1000);
 
 //    TC - 7. Click on 'View Product' of first product
-//    TC - 8. User is landed to product detail page
+        if (tc8vappdp.getViewProduct().isDisplayed())
+        {
+            String viewProductButtonText= tc8vappdp.getViewProduct().getText();
+            System.out.println(viewProductButtonText + Data.POSITIVE_MASSAGE);
+            Assert.assertEquals(viewProductButtonText,Data.VIEW_PRODUCTS_TEXT);
+            tc8vappdp.getViewProduct().click();
+        }
+        else {
+            System.out.println(Data.NEGATIVE_ERROR_MASSAGE);
+        }
+        sleepTest(2000);
+
+//    TC - 8. User has landed on product detail page
+        String firstProductLandingPAge = driver.getCurrentUrl();
+        System.out.println("Given URL"+firstProductLandingPAge);
+        Assert.assertEquals(firstProductLandingPAge, Data.FIRST_PRODUCT_LANDING_PAGE);
+        System.out.println("Home URL is validate");
+        sleepTest(1000);
+
 //    TC - 9. Verify that detail detail is visible: product name, category, price, availability, condition, brand
+        tc8vappdp.getProductName().isDisplayed();
+        tc8vappdp.getCategoryOfPrduct().isDisplayed();
+        tc8vappdp.getProductAvailability().isDisplayed();
+        tc8vappdp.getProductCondition().isDisplayed();
+        tc8vappdp.getProductBrand().isDisplayed();
+        sleepTest(2000);
 
     }
 }
