@@ -13,7 +13,8 @@ public class TestCase10VerifySubscriptionInHomepage extends BaseClass{
         TestCase10VerifySubscriptionInHomepagePages tc10vsihp = new TestCase10VerifySubscriptionInHomepagePages(driver);
 
 //      TC-  4. Scroll down to footer
-        //TC-2 Infinite Scroll Validation
+
+       //Infinite Scroll
         JavascriptExecutor js = (JavascriptExecutor) driver;
 
         long initialLength = (long) js.executeScript("return document.body.scrollHeight");
