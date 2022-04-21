@@ -113,4 +113,20 @@ public class Data {
 
 
 
+    //                      ✅✅✅      Test Case 11: Verify Subscription in Cart page  ✅✅✅
+
+
+    public static final String CART_BUTTON_TEXT = "Cart";
+
+
+    //                      ✅✅✅      Test Case 12: Add Products in Cart  ✅✅✅
+
+
+    public static final String CONTINUE_SHOPING_BUTTON_TEXT = "Continue Shopping";
+    public static final String VIEW_CART_BUTTON_TEXT = "View Cart";
+
+
+
+
+
 }
