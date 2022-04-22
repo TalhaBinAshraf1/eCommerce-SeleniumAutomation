@@ -126,6 +126,20 @@ public class Data {
     public static final String VIEW_CART_BUTTON_TEXT = "View Cart";
 
 
+//                      ✅✅✅     Test Case 13: Verify Product quantity in Cart    ✅✅✅
+
+
+    public static final String VIEW_PRODUCT_BUTTON_TEXT = "View Product";
+    public static final String FIRST_PRODUCT_PAGE_URL = "https://www.automationexercise.com/product_details/1";
+    public static final String VIEW_CART_PAGE_URL = "https://www.automationexercise.com/view_cart";
+
+
+
+    //                      ✅✅✅     Test Case 14: Place Order: Register while Checkout    ✅✅✅
+
+
+
+
 
 
 
