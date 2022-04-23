@@ -8,7 +8,8 @@ public class Data {
     public static final String  LOGIN_PAGE_URL = "login";
 
     //Static data
-    public static final String PHONE_NUMBER = "01763450445";
+    public static final String DEMO_TEXT= "Test Ongoing In Selenium ";
+    public static final String MESSAGE= "Test Ongoing In Selenium ";
     public static final String NEGATIVE_ERROR_MASSAGE = " - Element is Not Visible ❌❌❌";
     public static final String POSITIVE_MASSAGE = "- Element is Visible ✔✔✔ ";
     public static final String CREATE_NEW_ACCOUNT = "Create New Account";
@@ -76,7 +77,6 @@ public class Data {
     public static final String NAME= "AB Zaman";
     public static final String EMAIL= "test0123455@testmail.com";
     public static final String SUBJECT= "Test Ongoing In Selenium ";
-    public static final String MESSAGE= "Test Ongoing In Selenium ";
     public static final String SUCESS_MESSAGE= "Success! Your details have been submitted successfully.";
 
 
@@ -136,6 +136,21 @@ public class Data {
 
 
     //                      ✅✅✅     Test Case 14: Place Order: Register while Checkout    ✅✅✅
+
+    public static final String  DELIVERY_INFORMATION_NAME= "Mrs. Alex Smakov";
+    public static final String  DELIVERY_INFORMATION_COMPANY= "TestCompany";
+    public static final String  DELIVERY_INFORMATION_ADDRESS1= "145-W,Troy,Newyork,USA";
+    public static final String  DELIVERY_INFORMATION_ADDRESS2= "145-W,Newyork";
+    public static final String  DELIVERY_INFORMATION_STATE_CITY_ZIPCODE= "Troy NewYork 1256";
+    public static final String  DELIVERY_INFORMATION_COUNTRY= "United States";
+    public static final String  DELIVERY_INFORMATION_MOBILE_NUMBER= "+01235525";
+    public static final String  NAME_ON_CARD = "Alex Smakov";
+    public static final String  CARD_NUMBER = "test012345520";
+    public static final String  CVC = "12542";
+    public static final String  EXPIRATION_MM = "JULY";
+    public static final String  EXPIRATION_YYYY = "2024";
+    public static final String  CONGRATULATION_MESSAGE = "Congratulations! Your order has been confirmed!";
+
 
 
 

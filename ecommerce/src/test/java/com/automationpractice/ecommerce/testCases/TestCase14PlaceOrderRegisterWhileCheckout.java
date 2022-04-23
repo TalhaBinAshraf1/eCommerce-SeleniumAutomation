@@ -141,12 +141,54 @@ public class TestCase14PlaceOrderRegisterWhileCheckout extends BaseClass{
         sleepTest( 1000);
 
 //    TC  -  13. Verify Address Details and Review Your Order
+       Assert.assertEquals(tc14porwcp.getFullName().getText(),Data.DELIVERY_INFORMATION_NAME);
+       Assert.assertEquals(tc14porwcp.getComapnyName().getText(),Data.DELIVERY_INFORMATION_COMPANY);
+       Assert.assertEquals(tc14porwcp.getAdress1().getText(),Data.DELIVERY_INFORMATION_ADDRESS1);
+       Assert.assertEquals(tc14porwcp.getAdress2().getText(),Data.DELIVERY_INFORMATION_ADDRESS2);
+       Assert.assertEquals(tc14porwcp.getStateCityZipcode().getText(),Data.DELIVERY_INFORMATION_STATE_CITY_ZIPCODE);
+       Assert.assertEquals(tc14porwcp.getCountry().getText(),Data.DELIVERY_INFORMATION_COUNTRY);
+       Assert.assertEquals(tc14porwcp.getPhoneNumber().getText(),Data.DELIVERY_INFORMATION_MOBILE_NUMBER);
+       sleepTest(2000);
+
 //    TC  -  14. Enter description in comment text area and click 'Place Order'
+        tc14porwcp.getCommentInputField().isDisplayed();
+        tc14porwcp.getCommentInputField().sendKeys(Data.DEMO_TEXT);
+        tc14porwcp.getPlaceOrderButton().click();
+        sleepTest(2000);
+
+
 //    TC  -  15. Enter payment details: Name on Card, Card Number, CVC, Expiration date
-//    TC  -  16. Click 'Pay and Confirm Order' button
-//    TC  -  17. Verify success message 'Your order has been placed successfully!'
-//    TC  -  18. Click 'Delete Account' button
-//    TC  -  19. Verify 'ACCOUNT DELETED!' and click 'Continue' button
+        tc14porwcp.getNameOnCardInputField().isDisplayed();
+        tc14porwcp.getNameOnCardInputField().sendKeys(Data.NAME_ON_CARD);
+        sleepTest(1000);
+
+        tc14porwcp.getCardNumberInputField().isDisplayed();
+        tc14porwcp.getCardNumberInputField().sendKeys(Data.CARD_NUMBER);
+        sleepTest(1000);
+
+        tc14porwcp.getCvcInputField().isDisplayed();
+        tc14porwcp.getCvcInputField().sendKeys(Data.CVC);
+        sleepTest(1000);
+
+        tc14porwcp.getExpirationMMInputField().isDisplayed();
+        tc14porwcp.getExpirationMMInputField().sendKeys(Data.EXPIRATION_MM);
+        sleepTest(1000);
+
+        tc14porwcp.getExpirationYYYYInputField().isDisplayed();
+        tc14porwcp.getExpirationYYYYInputField().sendKeys(Data.EXPIRATION_YYYY);
+        sleepTest(1000);
+
+        //    TC  -  16. Click 'Pay and Confirm Order' button
+        tc14porwcp.getPayAndConfirmOrderButton().isDisplayed();
+        tc14porwcp.getPayAndConfirmOrderButton().click();
+        sleepTest(1000);
+
+//    TC  -  17. Verify success message 'Your order has been placed successfully!
+        tc14porwcp.getCongratualationMessage().isDisplayed();
+        Assert.assertEquals(tc14porwcp.getCongratualationMessage().getText(),Data.CONGRATULATION_MESSAGE);
+        sleepTest(2000);
+
+
 
     }
 }
