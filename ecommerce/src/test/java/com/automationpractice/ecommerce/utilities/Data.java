@@ -152,6 +152,10 @@ public class Data {
     public static final String  CONGRATULATION_MESSAGE = "Congratulations! Your order has been confirmed!";
 
 
+    //                      ✅✅✅     Test Case 17: Remove Products From Cart   ✅✅✅
+
+    public static final String  CART_EMPTY_MESSAGE = "Cart is empty! Click here to buy products.";
+
 
 
 
