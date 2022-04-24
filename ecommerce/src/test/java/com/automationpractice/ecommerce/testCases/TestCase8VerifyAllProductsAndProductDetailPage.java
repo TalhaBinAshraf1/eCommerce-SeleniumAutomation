@@ -62,9 +62,9 @@ public class TestCase8VerifyAllProductsAndProductDetailPage extends BaseClass{
         for(int i =0;i<listElement.size();i++) {
             String elementText = listElement.get(i).getText();
             System.out.println(elementText);
-            Assert.assertTrue(true,"DRESS");
-            Assert.assertTrue(true,"TOPS");
-            Assert.assertTrue(true,"Saree");
+            Assert.assertEquals("DRESS","DRESS");
+            Assert.assertEquals("TOPS","TOPS");
+            Assert.assertEquals("Saree","Saree");
         }
         sleepTest(1000);
 
