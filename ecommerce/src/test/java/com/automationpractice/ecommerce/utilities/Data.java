@@ -158,6 +158,24 @@ public class Data {
 
 
 
+    //                      ✅✅✅     Test Case 18: View Category Products   ✅✅✅
+
+
+    public static final String  DRESS_TEXT = "DRESS";
+    public static final String  WOMAN_DRESS_PRODUCTS_TEXT = "WOMEN - DRESS PRODUCTS";
+    public static final String  MEN_TSHIRTS_PRODUCTS_TEXT = "MEN - TSHIRTS PRODUCTS";
+
+
+    //                      ✅✅✅     Test Case 19: View & Cart Brand Products   ✅✅✅
+
+    public static final String POLO_BRAND_PAGE  = "https://www.automationexercise.com/brand_products/Polo";
+    public static final String  BRAND_POLO_PRODUCTS_TEXT = "BRAND - POLO PRODUCTS";
+    public static final String BIBA_BRAND_PAGE  = "https://www.automationexercise.com/brand_products/Biba";
+    public static final String  BRAND_BIBA_PRODUCTS_TEXT = "BRAND - BIBA PRODUCTS";
+
+
+
+
 
 
 
