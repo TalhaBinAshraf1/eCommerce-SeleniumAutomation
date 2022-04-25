@@ -28,7 +28,6 @@ public class TestCase9SearchProduct extends BaseClass{
 
 //    TC - 5. Verify user is navigated to ALL PRODUCTS page successfully
 
-
         //url
         String productsPageLink = driver.getCurrentUrl();
         System.out.println("Given "+productsPageLink);
