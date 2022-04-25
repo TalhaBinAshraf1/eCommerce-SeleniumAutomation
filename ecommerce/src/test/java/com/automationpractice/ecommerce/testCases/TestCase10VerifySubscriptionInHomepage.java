@@ -62,8 +62,6 @@ public class TestCase10VerifySubscriptionInHomepage extends BaseClass{
             sleepTest(1000);
             Assert.assertEquals(alert,"You have been successfully subscribed!");
             sleepTest(2000);
-
-
         }
     }
 }

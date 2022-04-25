@@ -90,11 +90,11 @@ public class Data {
 
 //                      ✅✅✅  Test Case 8: Verify All Products and product detail page  ✅✅✅
 
-    public static final String PRODUCTS_TEXT= "Products";
-    public static final String PRODUCTS_PAGE_LINK= "https://www.automationexercise.com/products";
-    public static final String ALL_PRODUCTS_TEXT= "ALL PRODUCTS";
-    public static final String VIEW_PRODUCTS_TEXT= "View Product";
-    public static final String FIRST_PRODUCT_LANDING_PAGE= "https://www.automationexercise.com/product_details/1";
+    public static final String PRODUCTS_TEXT = "Products";
+    public static final String PRODUCTS_PAGE_LINK = "https://www.automationexercise.com/products";
+    public static final String ALL_PRODUCTS_TEXT = "ALL PRODUCTS";
+    public static final String VIEW_PRODUCTS_TEXT = "View Product";
+    public static final String FIRST_PRODUCT_LANDING_PAGE = "https://www.automationexercise.com/product_details/1";
 
 
 
@@ -172,6 +172,21 @@ public class Data {
     public static final String  BRAND_POLO_PRODUCTS_TEXT = "BRAND - POLO PRODUCTS";
     public static final String BIBA_BRAND_PAGE  = "https://www.automationexercise.com/brand_products/Biba";
     public static final String  BRAND_BIBA_PRODUCTS_TEXT = "BRAND - BIBA PRODUCTS";
+
+
+    //                      ✅✅✅     Test Case 20 : View & Cart Brand Products   ✅✅✅
+
+    public static final String SEARCHED_PRODUCTS_TEXT = "SEARCHED PRODUCTS";
+
+
+
+    //                      ✅✅✅     Test Case 21: Add review on product   ✅✅✅
+
+    public static final String WRITE_YOUR_REVIEW_TEXT = "WRITE YOUR REVIEW";
+
+
+
+
 
 
 
