@@ -20,7 +20,6 @@ public class Data {
     //                      ✅✅✅  Test Case 1: Register User  ✅✅✅
 
 
-
     public static final String NEW_USER_SIGNUP_TEXT = "New User Signup!";
     //Signup button validation
     public static final String SIGNUP_BUTTON_TEXT = "Signup";
@@ -28,6 +27,7 @@ public class Data {
     public static final String DEMO_USER_NAME= "test012";
     public static final String DEMO_EMAIL= "alexsmkovtkvtzb4@sgisfg.com";
     public static final String DEMO_PASSWORD= "Asdf1234";
+
     //signup
     public static final String ENTER_ACCOUNT_INFORMATION = "ENTER ACCOUNT INFORMATION";
     //Address Information
@@ -169,9 +169,9 @@ public class Data {
     //                      ✅✅✅     Test Case 19: View & Cart Brand Products   ✅✅✅
 
     public static final String POLO_BRAND_PAGE  = "https://www.automationexercise.com/brand_products/Polo";
-    public static final String  BRAND_POLO_PRODUCTS_TEXT = "BRAND - POLO PRODUCTS";
+    public static final String BRAND_POLO_PRODUCTS_TEXT = "BRAND - POLO PRODUCTS";
     public static final String BIBA_BRAND_PAGE  = "https://www.automationexercise.com/brand_products/Biba";
-    public static final String  BRAND_BIBA_PRODUCTS_TEXT = "BRAND - BIBA PRODUCTS";
+    public static final String BRAND_BIBA_PRODUCTS_TEXT = "BRAND - BIBA PRODUCTS";
 
 
     //                      ✅✅✅     Test Case 20 : View & Cart Brand Products   ✅✅✅
@@ -185,13 +185,31 @@ public class Data {
     public static final String WRITE_YOUR_REVIEW_TEXT = "WRITE YOUR REVIEW";
 
 
+    //                      ✅✅✅     Test Case 22: Add to cart from Recommended items   ✅✅✅
 
 
 
+    public static final String RECOMANDED_ITEM_TEXT = "RECOMMENDED ITEMS";
 
 
 
+    //                      ✅✅✅     Test Case 23: Verify address details in checkout page   ✅✅✅
 
+
+    public static final String DEMO_USER_NAME_1= "test4678";
+    public static final String DEMO_EMAIL_1= "alexsmtkvtzb4578@sgisfgkk.com";
+    public static final String DEMO_PASSWORD_1= "Asdf123477";
+    public static final String  LOGGED_IN_AS_USER_TEXT_1 = "Logged in as test4678";
+
+
+
+    //                      ✅✅✅     Test Case 24: Download Invoice after purchase order    ✅✅✅
+
+
+    public static final String DEMO_USER_NAME_2= "test46789";
+    public static final String DEMO_EMAIL_2= "alexsmtkvtzb45789@sgisfgkk.com";
+    public static final String DEMO_PASSWORD_2= "Asdf123477";
+    public static final String  LOGGED_IN_AS_USER_TEXT_2 = "Logged in as test46789";
 
 
 
