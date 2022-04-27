@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 public class TestCase9SearchProduct extends BaseClass{
 
     @Test
-    public void TestCase9SearchProduct(){
+    public void testCase9SearchProduct(){
 
         TestCase9SearchProductPages tc9spp =new TestCase9SearchProductPages(driver);
 

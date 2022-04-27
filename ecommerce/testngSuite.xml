@@ -10,6 +10,166 @@
                 </methods>
             </class>
 
+            <class name ="com.automationpractice.ecommerce.testCases.TestCase2LoginUserWithCorrectEmailAndPassword">
+                <methods>
+                    <include name="testCase2LoginUserWithCorrectEmailAndPassword" />
+                </methods>
+            </class>
+
+            <class name ="com.automationpractice.ecommerce.testCases.TestCase3LoginUserWithIncorrectEmailAndPassword">
+                <methods>
+                    <include name="testCase3LoginUserWithIncorrectEmailAndPassword" />
+                </methods>
+            </class>
+
+            <class name ="com.automationpractice.ecommerce.testCases.TestCase4LogoutUser">
+                <methods>
+                    <include name="testCase4LogoutUser" />
+                </methods>
+            </class>
+
+            <class name ="com.automationpractice.ecommerce.testCases.TestCase5RegisterUserWithExistingEmail">
+                <methods>
+                    <include name="testCase5RegisterUserWithExistingEmail" />
+                </methods>
+            </class>
+
+
+
+            <class name ="com.automationpractice.ecommerce.testCases.TestCase6ContactUsForm">
+                <methods>
+                    <include name="testCase6ContactUsForm" />
+                </methods>
+            </class>
+
+            <class name ="com.automationpractice.ecommerce.testCases.TestCase7VerifyTestCasesPage">
+                <methods>
+                    <include name="testCase7VerifyTestCasesPage" />
+                </methods>
+            </class>
+
+            <class name ="com.automationpractice.ecommerce.testCases.TestCase8VerifyAllProductsAndProductDetailPage">
+                <methods>
+                    <include name="testCase8VerifyAllProductsAndProductDetailPage" />
+                </methods>
+            </class>
+
+            <class name ="com.automationpractice.ecommerce.testCases.TestCase9SearchProduct">
+                <methods>
+                    <include name="testCase9SearchProduct" />
+                </methods>
+            </class>
+
+            <class name ="com.automationpractice.ecommerce.testCases.TestCase10VerifySubscriptionInHomepage">
+                <methods>
+                    <include name="testCase10VerifySubscriptionInHomepage" />
+                </methods>
+            </class>
+
+            <class name ="com.automationpractice.ecommerce.testCases.TestCase11VerifySubscriptionInCartpagePages_TC">
+                <methods>
+                    <include name="testCase11VerifySubscriptionInCartpagePages_TC" />
+                </methods>
+            </class>
+
+            <class name ="com.automationpractice.ecommerce.testCases.TestCase12AddProductsInCart">
+                <methods>
+                    <include name="testCase12AddProductsInCart" />
+                </methods>
+            </class>
+
+            <class name ="com.automationpractice.ecommerce.testCases.TestCase13VerifyProductQuantityInCart">
+                <methods>
+                    <include name="testCase13VerifyProductQuantityInCartPages" />
+                </methods>
+            </class>
+
+            <class name ="com.automationpractice.ecommerce.testCases.TestCase14PlaceOrderRegisterWhileCheckout">
+                <methods>
+                    <include name="testCase14PlaceOrderRegisterWhileCheckoutPages" />
+                </methods>
+            </class>
+
+            <class name ="com.automationpractice.ecommerce.testCases.TestCase15PlaceOrderRegisterBeforeCheckout">
+                <methods>
+                    <include name="testCase15PlaceOrderRegisterBeforeCheckoutPages" />
+                </methods>
+            </class>
+
+            <class name ="com.automationpractice.ecommerce.testCases.TestCase16PlaceOrderLoginBeforeCheckout">
+                <methods>
+                    <include name="testCase16PlaceOrderLoginBeforeCheckoutPages" />
+                </methods>
+            </class>
+
+            <class name ="com.automationpractice.ecommerce.testCases.TestCase17RemoveProductsFromCart">
+                <methods>
+                    <include name="testCase17RemoveProductsFromCartPages" />
+                </methods>
+            </class>
+            <class name ="com.automationpractice.ecommerce.testCases.TestCase18ViewCategoryProducts">
+                <methods>
+                    <include name="testCase18ViewCategoryProductsPages" />
+                </methods>
+            </class>
+
+            <class name ="com.automationpractice.ecommerce.testCases.TestCase19ViewAndCartBrandProducts">
+                <methods>
+                    <include name="testCase19ViewAndCartBrandProductsPages" />
+                </methods>
+            </class>
+
+            <class name ="com.automationpractice.ecommerce.testCases.TestCase20SearchProductsAndVerifyCartAfterLogin">
+                <methods>
+                    <include name="testCase20SearchProductsAndVerifyCartAfterLoginPages" />
+                </methods>
+            </class>
+
+
+            <class name ="com.automationpractice.ecommerce.testCases.TestCase21AddReviewOnProduct">
+            <methods>
+                <include name="testCase21AddReviewOnProductPages" />
+            </methods>
+        </class>
+
+            <class name ="com.automationpractice.ecommerce.testCases.TestCase22AddToCartFromRecommendedItems">
+                <methods>
+                    <include name="testCase22AddToCartFromRecommendedItems" />
+                </methods>
+            </class>
+
+            <class name ="com.automationpractice.ecommerce.testCases.TestCase23VerifyAddressDetailsInCheckoutpage">
+                <methods>
+                    <include name="testCase23VerifyAddressDetailsInCheckoutpagePages" />
+                </methods>
+            </class>
+
+
+
+            <class name ="com.automationpractice.ecommerce.testCases.TestCase24DownloadInvoiceAfterPurchaseOrder">
+                <methods>
+                    <include name="testCase24DownloadInvoiceAfterPurchaseOrderPages" />
+                </methods>
+            </class>
+
+
+
+            <class name ="com.automationpractice.ecommerce.testCases.TestCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality">
+                <methods>
+                    <include name="testCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality" />
+                </methods>
+            </class>
+
+
+
+            <class name ="com.automationpractice.ecommerce.testCases.TestCase26VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality">
+                <methods>
+                    <include name="testCase26VerifyScrollUpWithout_Arrow_buttonAndScrollDownFunctionalityPages" />
+                </methods>
+            </class>
+
+
+
         </classes>
     </test>
 </suite>

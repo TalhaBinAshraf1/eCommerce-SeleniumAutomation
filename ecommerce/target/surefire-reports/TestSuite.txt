@@ -1,4 +1,37 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 45.308 sec - in TestSuite
+Tests run: 26, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 1,189.222 sec <<< FAILURE! - in TestSuite
+testCase6ContactUsForm(com.automationpractice.ecommerce.testCases.TestCase6ContactUsForm)  Time elapsed: 13.218 sec  <<< FAILURE!
+org.openqa.selenium.InvalidArgumentException: 
+invalid argument: File not found : C:\Users\Talha\Desktop\demoImage.png
+  (Session info: chrome=100.0.4896.127)
+Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
+System info: host: 'DESKTOP-C6OQV70', ip: '192.168.0.193', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Talha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52871}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 36e321e98b6e45d2b90c629d46bed3e9
+	at com.automationpractice.ecommerce.testCases.TestCase6ContactUsForm.testCase6ContactUsForm(TestCase6ContactUsForm.java:88)
+
+testCase12AddProductsInCart(com.automationpractice.ecommerce.testCases.TestCase12AddProductsInCart)  Time elapsed: 51.276 sec  <<< FAILURE!
+org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: chrome=100.0.4896.127)
+Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
+System info: host: 'DESKTOP-C6OQV70', ip: '192.168.0.193', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Talha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59151}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c436c90c56d8c072f1ebe6201d6323d0
+	at com.automationpractice.ecommerce.testCases.TestCase12AddProductsInCart.testCase12AddProductsInCart(TestCase12AddProductsInCart.java:64)
+
+testCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality(com.automationpractice.ecommerce.testCases.TestCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality)  Time elapsed: 3.021 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+target frame detached
+  (Session info: chrome=100.0.4896.127)
+Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
+System info: host: 'DESKTOP-C6OQV70', ip: '192.168.0.193', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Talha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62393}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 328f65a268404a4dbbb97492ab2a6ac2
+	at com.automationpractice.ecommerce.testCases.TestCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality.testCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality(TestCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality.java:26)
+
