@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Regression]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="UITest(failed)" verbose="0">
+    <classes>
+      <class name="com.automationpractice.ecommerce.testCases.TestCase6ContactUsForm">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+          <include name="testCase6ContactUsForm"/>
+          <include name="afterTest"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.automationpractice.ecommerce.testCases.TestCase6ContactUsForm -->
+      <class name="com.automationpractice.ecommerce.testCases.TestCase12AddProductsInCart">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+          <include name="testCase12AddProductsInCart"/>
+          <include name="afterTest"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.automationpractice.ecommerce.testCases.TestCase12AddProductsInCart -->
+      <class name="com.automationpractice.ecommerce.testCases.TestCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality">
+        <methods>
+          <include name="testCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+          <include name="afterTest"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.automationpractice.ecommerce.testCases.TestCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality -->
+    </classes>
+  </test> <!-- UITest(failed) -->
+</suite> <!-- Failed suite [Regression] -->

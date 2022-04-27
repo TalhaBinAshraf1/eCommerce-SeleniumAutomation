@@ -24,8 +24,8 @@ public class Data {
     //Signup button validation
     public static final String SIGNUP_BUTTON_TEXT = "Signup";
     //Email and Password
-    public static final String DEMO_USER_NAME= "test012";
-    public static final String DEMO_EMAIL= "alexsmkovtkvtzb4@sgisfg.com";
+    public static final String DEMO_USER_NAME= "test012897";
+    public static final String DEMO_EMAIL= "alexsmkovtkvtzb4897@sgisfg.com";
     public static final String DEMO_PASSWORD= "Asdf1234";
 
     //signup
@@ -45,7 +45,7 @@ public class Data {
     //Account Created text
     public static final String  ACCOUNT_CREATED_TEXT = "ACCOUNT CREATED!";
     //Logged In As User Name  text
-    public static final String  LOGGED_IN_AS_USER_TEXT = "Logged in as test012";
+    public static final String  LOGGED_IN_AS_USER_TEXT = "Logged in as test012897";
 
 
 
@@ -196,21 +196,28 @@ public class Data {
     //                      ✅✅✅     Test Case 23: Verify address details in checkout page   ✅✅✅
 
 
-    public static final String DEMO_USER_NAME_1= "test4678";
-    public static final String DEMO_EMAIL_1= "alexsmtkvtzb4578@sgisfgkk.com";
+    public static final String DEMO_USER_NAME_1= "test467897";
+    public static final String DEMO_EMAIL_1= "alexsmtkvtzb457897@sgisfgkk.com";
     public static final String DEMO_PASSWORD_1= "Asdf123477";
-    public static final String  LOGGED_IN_AS_USER_TEXT_1 = "Logged in as test4678";
+    public static final String  LOGGED_IN_AS_USER_TEXT_1 = "Logged in as test467897";
 
 
 
     //                      ✅✅✅     Test Case 24: Download Invoice after purchase order    ✅✅✅
 
 
-    public static final String DEMO_USER_NAME_2= "test46789";
-    public static final String DEMO_EMAIL_2= "alexsmtkvtzb45789@sgisfgkk.com";
+    public static final String DEMO_USER_NAME_2= "test4678987";
+    public static final String DEMO_EMAIL_2= "alexsmtkvtzb4578987@sgisfgkk.com";
     public static final String DEMO_PASSWORD_2= "Asdf123477";
-    public static final String  LOGGED_IN_AS_USER_TEXT_2 = "Logged in as test46789";
+    public static final String  LOGGED_IN_AS_USER_TEXT_2 = "Logged in as test4678987";
 
+
+
+    //                      ✅✅✅     Test Case 25: Verify Scroll Up using 'Arrow' button and Scroll Down functionality    ✅✅✅
+
+
+
+    public static final String FULL_FLEDGED_PRACTICE_WEBSITE_FOR_AUTOMATION_EXERCISE_TEXT = "Full-Fledged practice website for Automation Engineers";
 
 
 }

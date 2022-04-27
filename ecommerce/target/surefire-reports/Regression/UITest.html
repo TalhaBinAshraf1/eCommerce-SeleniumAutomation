@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>UITest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>23/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Apr 17 00:54:17 BDT 2022</td>
+<td>Started on:</td><td>Thu Apr 28 03:18:44 BDT 2022</td>
 </tr>
-<tr><td>Total time:</td><td>45 seconds (45133 ms)</td>
+<tr><td>Total time:</td><td>1188 seconds (1188922 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,236 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.automationpractice.ecommerce.testCases.TestCase12AddProductsInCart.testCase12AddProductsInCart()'><b>testCase12AddProductsInCart</b><br>Test class: com.automationpractice.ecommerce.testCases.TestCase12AddProductsInCart</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=100.0.4896.127)
+Build info: version: &apos;4.0.0-alpha-6&apos;, revision: &apos;5f43a29cfc&apos;
+System info: host: &apos;DESKTOP-C6OQV70&apos;, ip: &apos;192.168.0.193&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Talha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59151}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c436c90c56d8c072f1ebe6201d6323d0
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:316)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at com.automationpractice.ecommerce.testCases.TestCase12AddProductsInCart.testCase12AddProductsInCart(TestCase12AddProductsInCart.java:64)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace658156215", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace658156215'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=100.0.4896.127)
+Build info: version: &apos;4.0.0-alpha-6&apos;, revision: &apos;5f43a29cfc&apos;
+System info: host: &apos;DESKTOP-C6OQV70&apos;, ip: &apos;192.168.0.193&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Talha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59151}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c436c90c56d8c072f1ebe6201d6323d0
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:316)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at com.automationpractice.ecommerce.testCases.TestCase12AddProductsInCart.testCase12AddProductsInCart(TestCase12AddProductsInCart.java:64)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+</pre></div></td>
+<td>51</td>
+<td>com.automationpractice.ecommerce.testCases.TestCase12AddProductsInCart@36d585c</td></tr>
+<tr>
+<td title='com.automationpractice.ecommerce.testCases.TestCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality.testCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality()'><b>testCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality</b><br>Test class: com.automationpractice.ecommerce.testCases.TestCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: target frame detached
+  (Session info: chrome=100.0.4896.127)
+Build info: version: &apos;4.0.0-alpha-6&apos;, revision: &apos;5f43a29cfc&apos;
+System info: host: &apos;DESKTOP-C6OQV70&apos;, ip: &apos;192.168.0.193&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Talha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62393}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 328f65a268404a4dbbb97492ab2a6ac2
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:517)
+	at com.automationpractice.ecommerce.testCases.TestCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality.testCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality(TestCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality.java:26)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1978531482", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1978531482'><pre>org.openqa.selenium.WebDriverException: target frame detached
+  (Session info: chrome=100.0.4896.127)
+Build info: version: &apos;4.0.0-alpha-6&apos;, revision: &apos;5f43a29cfc&apos;
+System info: host: &apos;DESKTOP-C6OQV70&apos;, ip: &apos;192.168.0.193&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Talha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62393}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 328f65a268404a4dbbb97492ab2a6ac2
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:517)
+	at com.automationpractice.ecommerce.testCases.TestCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality.testCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality(TestCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality.java:26)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+</pre></div></td>
+<td>3</td>
+<td>com.automationpractice.ecommerce.testCases.TestCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality@46fa7c39</td></tr>
+<tr>
+<td title='com.automationpractice.ecommerce.testCases.TestCase6ContactUsForm.testCase6ContactUsForm()'><b>testCase6ContactUsForm</b><br>Test class: com.automationpractice.ecommerce.testCases.TestCase6ContactUsForm</td>
+<td><div><pre>org.openqa.selenium.InvalidArgumentException: invalid argument: File not found : C:\Users\Talha\Desktop\demoImage.png
+  (Session info: chrome=100.0.4896.127)
+Build info: version: &apos;4.0.0-alpha-6&apos;, revision: &apos;5f43a29cfc&apos;
+System info: host: &apos;DESKTOP-C6OQV70&apos;, ip: &apos;192.168.0.193&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Talha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52871}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 36e321e98b6e45d2b90c629d46bed3e9
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:316)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:115)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy11.sendKeys(Unknown Source)
+	at com.automationpractice.ecommerce.testCases.TestCase6ContactUsForm.testCase6ContactUsForm(TestCase6ContactUsForm.java:88)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace882658588", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace882658588'><pre>org.openqa.selenium.InvalidArgumentException: invalid argument: File not found : C:\Users\Talha\Desktop\demoImage.png
+  (Session info: chrome=100.0.4896.127)
+Build info: version: &apos;4.0.0-alpha-6&apos;, revision: &apos;5f43a29cfc&apos;
+System info: host: &apos;DESKTOP-C6OQV70&apos;, ip: &apos;192.168.0.193&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Talha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52871}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 36e321e98b6e45d2b90c629d46bed3e9
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:316)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:115)
+	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy11.sendKeys(Unknown Source)
+	at com.automationpractice.ecommerce.testCases.TestCase6ContactUsForm.testCase6ContactUsForm(TestCase6ContactUsForm.java:88)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+</pre></div></td>
+<td>13</td>
+<td>com.automationpractice.ecommerce.testCases.TestCase6ContactUsForm@236e3f4e</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,10 +305,120 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='com.automationpractice.ecommerce.testCases.TestCase10VerifySubscriptionInHomepage.testCase10VerifySubscriptionInHomepage()'><b>testCase10VerifySubscriptionInHomepage</b><br>Test class: com.automationpractice.ecommerce.testCases.TestCase10VerifySubscriptionInHomepage</td>
+<td></td>
+<td>3</td>
+<td>com.automationpractice.ecommerce.testCases.TestCase10VerifySubscriptionInHomepage@5f16132a</td></tr>
+<tr>
+<td title='com.automationpractice.ecommerce.testCases.TestCase11VerifySubscriptionInCartpagePages_TC.testCase11VerifySubscriptionInCartpagePages_TC()'><b>testCase11VerifySubscriptionInCartpagePages_TC</b><br>Test class: com.automationpractice.ecommerce.testCases.TestCase11VerifySubscriptionInCartpagePages_TC</td>
+<td></td>
+<td>6</td>
+<td>com.automationpractice.ecommerce.testCases.TestCase11VerifySubscriptionInCartpagePages_TC@69fb6037</td></tr>
+<tr>
+<td title='com.automationpractice.ecommerce.testCases.TestCase13VerifyProductQuantityInCart.testCase13VerifyProductQuantityInCartPages()'><b>testCase13VerifyProductQuantityInCartPages</b><br>Test class: com.automationpractice.ecommerce.testCases.TestCase13VerifyProductQuantityInCart</td>
+<td></td>
+<td>25</td>
+<td>com.automationpractice.ecommerce.testCases.TestCase13VerifyProductQuantityInCart@87a85e1</td></tr>
+<tr>
+<td title='com.automationpractice.ecommerce.testCases.TestCase14PlaceOrderRegisterWhileCheckout.testCase14PlaceOrderRegisterWhileCheckoutPages()'><b>testCase14PlaceOrderRegisterWhileCheckoutPages</b><br>Test class: com.automationpractice.ecommerce.testCases.TestCase14PlaceOrderRegisterWhileCheckout</td>
+<td></td>
+<td>56</td>
+<td>com.automationpractice.ecommerce.testCases.TestCase14PlaceOrderRegisterWhileCheckout@671a5887</td></tr>
+<tr>
+<td title='com.automationpractice.ecommerce.testCases.TestCase15PlaceOrderRegisterBeforeCheckout.testCase15PlaceOrderRegisterBeforeCheckoutPages()'><b>testCase15PlaceOrderRegisterBeforeCheckoutPages</b><br>Test class: com.automationpractice.ecommerce.testCases.TestCase15PlaceOrderRegisterBeforeCheckout</td>
+<td></td>
+<td>56</td>
+<td>com.automationpractice.ecommerce.testCases.TestCase15PlaceOrderRegisterBeforeCheckout@5552768b</td></tr>
+<tr>
+<td title='com.automationpractice.ecommerce.testCases.TestCase16PlaceOrderLoginBeforeCheckout.testCase16PlaceOrderLoginBeforeCheckoutPages()'><b>testCase16PlaceOrderLoginBeforeCheckoutPages</b><br>Test class: com.automationpractice.ecommerce.testCases.TestCase16PlaceOrderLoginBeforeCheckout</td>
+<td></td>
+<td>56</td>
+<td>com.automationpractice.ecommerce.testCases.TestCase16PlaceOrderLoginBeforeCheckout@3c947bc5</td></tr>
+<tr>
+<td title='com.automationpractice.ecommerce.testCases.TestCase17RemoveProductsFromCart.testCase17RemoveProductsFromCartPages()'><b>testCase17RemoveProductsFromCartPages</b><br>Test class: com.automationpractice.ecommerce.testCases.TestCase17RemoveProductsFromCart</td>
+<td></td>
+<td>30</td>
+<td>com.automationpractice.ecommerce.testCases.TestCase17RemoveProductsFromCart@609db43b</td></tr>
+<tr>
+<td title='com.automationpractice.ecommerce.testCases.TestCase18ViewCategoryProducts.testCase18ViewCategoryProductsPages()'><b>testCase18ViewCategoryProductsPages</b><br>Test class: com.automationpractice.ecommerce.testCases.TestCase18ViewCategoryProducts</td>
+<td></td>
+<td>18</td>
+<td>com.automationpractice.ecommerce.testCases.TestCase18ViewCategoryProducts@55f616cf</td></tr>
+<tr>
+<td title='com.automationpractice.ecommerce.testCases.TestCase19ViewAndCartBrandProducts.testCase19ViewAndCartBrandProductsPages()'><b>testCase19ViewAndCartBrandProductsPages</b><br>Test class: com.automationpractice.ecommerce.testCases.TestCase19ViewAndCartBrandProducts</td>
+<td></td>
+<td>29</td>
+<td>com.automationpractice.ecommerce.testCases.TestCase19ViewAndCartBrandProducts@1356d4d4</td></tr>
+<tr>
 <td title='com.automationpractice.ecommerce.testCases.TestCase1RegisterUser.testCase1RegisterUser()'><b>testCase1RegisterUser</b><br>Test class: com.automationpractice.ecommerce.testCases.TestCase1RegisterUser</td>
 <td></td>
-<td>24</td>
-<td>com.automationpractice.ecommerce.testCases.TestCase1RegisterUser@313ac989</td></tr>
+<td>60</td>
+<td>com.automationpractice.ecommerce.testCases.TestCase1RegisterUser@28975c28</td></tr>
+<tr>
+<td title='com.automationpractice.ecommerce.testCases.TestCase20SearchProductsAndVerifyCartAfterLogin.testCase20SearchProductsAndVerifyCartAfterLoginPages()'><b>testCase20SearchProductsAndVerifyCartAfterLoginPages</b><br>Test class: com.automationpractice.ecommerce.testCases.TestCase20SearchProductsAndVerifyCartAfterLogin</td>
+<td></td>
+<td>59</td>
+<td>com.automationpractice.ecommerce.testCases.TestCase20SearchProductsAndVerifyCartAfterLogin@c03cf28</td></tr>
+<tr>
+<td title='com.automationpractice.ecommerce.testCases.TestCase21AddReviewOnProduct.testCase21AddReviewOnProductPages()'><b>testCase21AddReviewOnProductPages</b><br>Test class: com.automationpractice.ecommerce.testCases.TestCase21AddReviewOnProduct</td>
+<td></td>
+<td>26</td>
+<td>com.automationpractice.ecommerce.testCases.TestCase21AddReviewOnProduct@1329eff</td></tr>
+<tr>
+<td title='com.automationpractice.ecommerce.testCases.TestCase22AddToCartFromRecommendedItems.testCase22AddToCartFromRecommendedItems()'><b>testCase22AddToCartFromRecommendedItems</b><br>Test class: com.automationpractice.ecommerce.testCases.TestCase22AddToCartFromRecommendedItems</td>
+<td></td>
+<td>3</td>
+<td>com.automationpractice.ecommerce.testCases.TestCase22AddToCartFromRecommendedItems@6497b078</td></tr>
+<tr>
+<td title='com.automationpractice.ecommerce.testCases.TestCase23VerifyAddressDetailsInCheckoutpage.testCase23VerifyAddressDetailsInCheckoutpagePages()'><b>testCase23VerifyAddressDetailsInCheckoutpagePages</b><br>Test class: com.automationpractice.ecommerce.testCases.TestCase23VerifyAddressDetailsInCheckoutpage</td>
+<td></td>
+<td>95</td>
+<td>com.automationpractice.ecommerce.testCases.TestCase23VerifyAddressDetailsInCheckoutpage@41c2284a</td></tr>
+<tr>
+<td title='com.automationpractice.ecommerce.testCases.TestCase24DownloadInvoiceAfterPurchaseOrder.testCase24DownloadInvoiceAfterPurchaseOrderPages()'><b>testCase24DownloadInvoiceAfterPurchaseOrderPages</b><br>Test class: com.automationpractice.ecommerce.testCases.TestCase24DownloadInvoiceAfterPurchaseOrder</td>
+<td></td>
+<td>134</td>
+<td>com.automationpractice.ecommerce.testCases.TestCase24DownloadInvoiceAfterPurchaseOrder@53aad5d5</td></tr>
+<tr>
+<td title='com.automationpractice.ecommerce.testCases.TestCase26VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality.testCase26VerifyScrollUpWithout_Arrow_buttonAndScrollDownFunctionalityPages()'><b>testCase26VerifyScrollUpWithout_Arrow_buttonAndScrollDownFunctionalityPages</b><br>Test class: com.automationpractice.ecommerce.testCases.TestCase26VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality</td>
+<td></td>
+<td>9</td>
+<td>com.automationpractice.ecommerce.testCases.TestCase26VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality@1fb700ee</td></tr>
+<tr>
+<td title='com.automationpractice.ecommerce.testCases.TestCase2LoginUserWithCorrectEmailAndPassword.testCase2LoginUserWithCorrectEmailAndPassword()'><b>testCase2LoginUserWithCorrectEmailAndPassword</b><br>Test class: com.automationpractice.ecommerce.testCases.TestCase2LoginUserWithCorrectEmailAndPassword</td>
+<td></td>
+<td>15</td>
+<td>com.automationpractice.ecommerce.testCases.TestCase2LoginUserWithCorrectEmailAndPassword@3943a2be</td></tr>
+<tr>
+<td title='com.automationpractice.ecommerce.testCases.TestCase3LoginUserWithIncorrectEmailAndPassword.testCase3LoginUserWithIncorrectEmailAndPassword()'><b>testCase3LoginUserWithIncorrectEmailAndPassword</b><br>Test class: com.automationpractice.ecommerce.testCases.TestCase3LoginUserWithIncorrectEmailAndPassword</td>
+<td></td>
+<td>6</td>
+<td>com.automationpractice.ecommerce.testCases.TestCase3LoginUserWithIncorrectEmailAndPassword@343570b7</td></tr>
+<tr>
+<td title='com.automationpractice.ecommerce.testCases.TestCase4LogoutUser.testCase4LogoutUser()'><b>testCase4LogoutUser</b><br>Test class: com.automationpractice.ecommerce.testCases.TestCase4LogoutUser</td>
+<td></td>
+<td>16</td>
+<td>com.automationpractice.ecommerce.testCases.TestCase4LogoutUser@157853da</td></tr>
+<tr>
+<td title='com.automationpractice.ecommerce.testCases.TestCase5RegisterUserWithExistingEmail.testCase5RegisterUserWithExistingEmail()'><b>testCase5RegisterUserWithExistingEmail</b><br>Test class: com.automationpractice.ecommerce.testCases.TestCase5RegisterUserWithExistingEmail</td>
+<td></td>
+<td>12</td>
+<td>com.automationpractice.ecommerce.testCases.TestCase5RegisterUserWithExistingEmail@71c3b41</td></tr>
+<tr>
+<td title='com.automationpractice.ecommerce.testCases.TestCase7VerifyTestCasesPage.testCase7VerifyTestCasesPage()'><b>testCase7VerifyTestCasesPage</b><br>Test class: com.automationpractice.ecommerce.testCases.TestCase7VerifyTestCasesPage</td>
+<td></td>
+<td>4</td>
+<td>com.automationpractice.ecommerce.testCases.TestCase7VerifyTestCasesPage@3cc1435c</td></tr>
+<tr>
+<td title='com.automationpractice.ecommerce.testCases.TestCase8VerifyAllProductsAndProductDetailPage.testCase8VerifyAllProductsAndProductDetailPage()'><b>testCase8VerifyAllProductsAndProductDetailPage</b><br>Test class: com.automationpractice.ecommerce.testCases.TestCase8VerifyAllProductsAndProductDetailPage</td>
+<td></td>
+<td>20</td>
+<td>com.automationpractice.ecommerce.testCases.TestCase8VerifyAllProductsAndProductDetailPage@6bf0219d</td></tr>
+<tr>
+<td title='com.automationpractice.ecommerce.testCases.TestCase9SearchProduct.testCase9SearchProduct()'><b>testCase9SearchProduct</b><br>Test class: com.automationpractice.ecommerce.testCases.TestCase9SearchProduct</td>
+<td></td>
+<td>25</td>
+<td>com.automationpractice.ecommerce.testCases.TestCase9SearchProduct@dd0c991</td></tr>
 </table><p>
 </body>
 </html>

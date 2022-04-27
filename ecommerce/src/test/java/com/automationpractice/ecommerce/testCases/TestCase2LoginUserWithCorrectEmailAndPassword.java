@@ -1,6 +1,6 @@
 package com.automationpractice.ecommerce.testCases;
 
-import com.automationpractice.ecommerce.pages.TestCase1RegisterUserPage;
+
 import com.automationpractice.ecommerce.pages.TestCase2LoginUserWithCorrectEmailAndPasswordPage;
 import com.automationpractice.ecommerce.utilities.Data;
 import org.testng.Assert;
