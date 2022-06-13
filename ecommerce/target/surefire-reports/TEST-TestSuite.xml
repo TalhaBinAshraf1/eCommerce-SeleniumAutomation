@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="1,189.222" tests="26" errors="0" skipped="0" failures="3">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="31.893" tests="130" errors="0" skipped="104" failures="26">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="11.0.14+8-LTS-263"/>
@@ -64,103 +64,598 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="testCase1RegisterUser" classname="com.automationpractice.ecommerce.testCases.TestCase1RegisterUser" time="60.64"/>
-  <testcase name="testCase2LoginUserWithCorrectEmailAndPassword" classname="com.automationpractice.ecommerce.testCases.TestCase2LoginUserWithCorrectEmailAndPassword" time="15.249"/>
-  <testcase name="testCase3LoginUserWithIncorrectEmailAndPassword" classname="com.automationpractice.ecommerce.testCases.TestCase3LoginUserWithIncorrectEmailAndPassword" time="6.431"/>
-  <testcase name="testCase4LogoutUser" classname="com.automationpractice.ecommerce.testCases.TestCase4LogoutUser" time="16.252"/>
-  <testcase name="testCase5RegisterUserWithExistingEmail" classname="com.automationpractice.ecommerce.testCases.TestCase5RegisterUserWithExistingEmail" time="12.57"/>
-  <testcase name="testCase6ContactUsForm" classname="com.automationpractice.ecommerce.testCases.TestCase6ContactUsForm" time="13.218">
-    <failure message="invalid argument: File not found : C:\Users\Talha\Desktop\demoImage.png&#10;  (Session info: chrome=100.0.4896.127)&#10;Build info: version: &apos;4.0.0-alpha-6&apos;, revision: &apos;5f43a29cfc&apos;&#10;System info: host: &apos;DESKTOP-C6OQV70&apos;, ip: &apos;192.168.0.193&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Talha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52871}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 36e321e98b6e45d2b90c629d46bed3e9" type="org.openqa.selenium.InvalidArgumentException">org.openqa.selenium.InvalidArgumentException: 
-invalid argument: File not found : C:\Users\Talha\Desktop\demoImage.png
-  (Session info: chrome=100.0.4896.127)
-Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
-System info: host: 'DESKTOP-C6OQV70', ip: '192.168.0.193', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Talha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52871}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 36e321e98b6e45d2b90c629d46bed3e9
-	at com.automationpractice.ecommerce.testCases.TestCase6ContactUsForm.testCase6ContactUsForm(TestCase6ContactUsForm.java:88)
+  <testcase name="beforeClass" classname="com.automationpractice.ecommerce.testCases.TestCase1RegisterUser" time="8.124">
+    <failure message="com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V" type="java.lang.NoSuchMethodError">java.lang.NoSuchMethodError: com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V
 </failure>
-    <system-out><![CDATA[ 
-Given https://www.automationexercise.com/
-Home URL is validate
-GET IN TOUCH- Element is Visible ??? 
-Name Inputted Successfully
-Email Inputted Successfully
-Subject Inputted Successfully
-Message Inputted Successfully
+    <system-out><![CDATA[[TestNGContentHandler] [WARN] It is strongly recommended to add "<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >" at the top of your file, otherwise TestNG may fail or not work as expected.
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 100.0.4896.60 (6a5d10861ce8de5fce22564658033b43cb7de047-refs/branch-heads/4896@{#875}) on port 64729
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 37381
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Apr 28, 2022 3:21:36 AM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="testCase7VerifyTestCasesPage" classname="com.automationpractice.ecommerce.testCases.TestCase7VerifyTestCasesPage" time="4.237"/>
-  <testcase name="testCase8VerifyAllProductsAndProductDetailPage" classname="com.automationpractice.ecommerce.testCases.TestCase8VerifyAllProductsAndProductDetailPage" time="20.315"/>
-  <testcase name="testCase9SearchProduct" classname="com.automationpractice.ecommerce.testCases.TestCase9SearchProduct" time="25.741"/>
-  <testcase name="testCase10VerifySubscriptionInHomepage" classname="com.automationpractice.ecommerce.testCases.TestCase10VerifySubscriptionInHomepage" time="3.012"/>
-  <testcase name="testCase11VerifySubscriptionInCartpagePages_TC" classname="com.automationpractice.ecommerce.testCases.TestCase11VerifySubscriptionInCartpagePages_TC" time="6.353"/>
-  <testcase name="testCase12AddProductsInCart" classname="com.automationpractice.ecommerce.testCases.TestCase12AddProductsInCart" time="51.276">
-    <failure message="element not interactable&#10;  (Session info: chrome=100.0.4896.127)&#10;Build info: version: &apos;4.0.0-alpha-6&apos;, revision: &apos;5f43a29cfc&apos;&#10;System info: host: &apos;DESKTOP-C6OQV70&apos;, ip: &apos;192.168.0.193&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Talha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59151}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: c436c90c56d8c072f1ebe6201d6323d0" type="org.openqa.selenium.ElementNotInteractableException">org.openqa.selenium.ElementNotInteractableException: 
-element not interactable
-  (Session info: chrome=100.0.4896.127)
-Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
-System info: host: 'DESKTOP-C6OQV70', ip: '192.168.0.193', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Talha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59151}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: c436c90c56d8c072f1ebe6201d6323d0
-	at com.automationpractice.ecommerce.testCases.TestCase12AddProductsInCart.testCase12AddProductsInCart(TestCase12AddProductsInCart.java:64)
+  <testcase name="beforeMethod" classname="com.automationpractice.ecommerce.testCases.TestCase1RegisterUser" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testCase1RegisterUser" classname="com.automationpractice.ecommerce.testCases.TestCase1RegisterUser" time="0">
+    <skipped message="com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V"/>
+  </testcase>
+  <testcase name="afterTest" classname="com.automationpractice.ecommerce.testCases.TestCase1RegisterUser" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="afterClass" classname="com.automationpractice.ecommerce.testCases.TestCase1RegisterUser" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="beforeClass" classname="com.automationpractice.ecommerce.testCases.TestCase2LoginUserWithCorrectEmailAndPassword" time="8.646">
+    <failure message="com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V" type="java.lang.NoSuchMethodError">java.lang.NoSuchMethodError: com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V
 </failure>
-    <system-out><![CDATA[ 
-Given https://www.automationexercise.com/
-Home URL is validate
-? Products- Element is Visible ??? 
-?Continue Shopping? Text IS Visible 
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 100.0.4896.60 (6a5d10861ce8de5fce22564658033b43cb7de047-refs/branch-heads/4896@{#875}) on port 55552
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 8394
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Apr 28, 2022 3:24:02 AM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="testCase13VerifyProductQuantityInCartPages" classname="com.automationpractice.ecommerce.testCases.TestCase13VerifyProductQuantityInCart" time="25.185"/>
-  <testcase name="testCase14PlaceOrderRegisterWhileCheckoutPages" classname="com.automationpractice.ecommerce.testCases.TestCase14PlaceOrderRegisterWhileCheckout" time="56.707"/>
-  <testcase name="testCase15PlaceOrderRegisterBeforeCheckoutPages" classname="com.automationpractice.ecommerce.testCases.TestCase15PlaceOrderRegisterBeforeCheckout" time="56.538"/>
-  <testcase name="testCase16PlaceOrderLoginBeforeCheckoutPages" classname="com.automationpractice.ecommerce.testCases.TestCase16PlaceOrderLoginBeforeCheckout" time="56.591"/>
-  <testcase name="testCase17RemoveProductsFromCartPages" classname="com.automationpractice.ecommerce.testCases.TestCase17RemoveProductsFromCart" time="30.679"/>
-  <testcase name="testCase18ViewCategoryProductsPages" classname="com.automationpractice.ecommerce.testCases.TestCase18ViewCategoryProducts" time="18.162"/>
-  <testcase name="testCase19ViewAndCartBrandProductsPages" classname="com.automationpractice.ecommerce.testCases.TestCase19ViewAndCartBrandProducts" time="29.505"/>
-  <testcase name="testCase20SearchProductsAndVerifyCartAfterLoginPages" classname="com.automationpractice.ecommerce.testCases.TestCase20SearchProductsAndVerifyCartAfterLogin" time="59.512"/>
-  <testcase name="testCase21AddReviewOnProductPages" classname="com.automationpractice.ecommerce.testCases.TestCase21AddReviewOnProduct" time="26.699"/>
-  <testcase name="testCase22AddToCartFromRecommendedItems" classname="com.automationpractice.ecommerce.testCases.TestCase22AddToCartFromRecommendedItems" time="3.017"/>
-  <testcase name="testCase23VerifyAddressDetailsInCheckoutpagePages" classname="com.automationpractice.ecommerce.testCases.TestCase23VerifyAddressDetailsInCheckoutpage" time="95.327"/>
-  <testcase name="testCase24DownloadInvoiceAfterPurchaseOrderPages" classname="com.automationpractice.ecommerce.testCases.TestCase24DownloadInvoiceAfterPurchaseOrder" time="134.725"/>
-  <testcase name="testCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality" classname="com.automationpractice.ecommerce.testCases.TestCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality" time="3.021">
-    <failure message="target frame detached&#10;  (Session info: chrome=100.0.4896.127)&#10;Build info: version: &apos;4.0.0-alpha-6&apos;, revision: &apos;5f43a29cfc&apos;&#10;System info: host: &apos;DESKTOP-C6OQV70&apos;, ip: &apos;192.168.0.193&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Talha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62393}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 328f65a268404a4dbbb97492ab2a6ac2" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
-target frame detached
-  (Session info: chrome=100.0.4896.127)
-Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
-System info: host: 'DESKTOP-C6OQV70', ip: '192.168.0.193', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Talha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62393}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 328f65a268404a4dbbb97492ab2a6ac2
-	at com.automationpractice.ecommerce.testCases.TestCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality.testCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality(TestCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality.java:26)
+  <testcase name="beforeMethod" classname="com.automationpractice.ecommerce.testCases.TestCase2LoginUserWithCorrectEmailAndPassword" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testCase2LoginUserWithCorrectEmailAndPassword" classname="com.automationpractice.ecommerce.testCases.TestCase2LoginUserWithCorrectEmailAndPassword" time="0">
+    <skipped message="com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V"/>
+  </testcase>
+  <testcase name="afterTest" classname="com.automationpractice.ecommerce.testCases.TestCase2LoginUserWithCorrectEmailAndPassword" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="afterClass" classname="com.automationpractice.ecommerce.testCases.TestCase2LoginUserWithCorrectEmailAndPassword" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="beforeClass" classname="com.automationpractice.ecommerce.testCases.TestCase3LoginUserWithIncorrectEmailAndPassword" time="9.165">
+    <failure message="com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V" type="java.lang.NoSuchMethodError">java.lang.NoSuchMethodError: com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V
 </failure>
-    <system-out><![CDATA[ 
-Given https://www.automationexercise.com/
-Home URL is validate
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 100.0.4896.60 (6a5d10861ce8de5fce22564658033b43cb7de047-refs/branch-heads/4896@{#875}) on port 55175
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 52802
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Apr 28, 2022 3:37:48 AM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="testCase26VerifyScrollUpWithout_Arrow_buttonAndScrollDownFunctionalityPages" classname="com.automationpractice.ecommerce.testCases.TestCase26VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality" time="9.218"/>
+  <testcase name="beforeMethod" classname="com.automationpractice.ecommerce.testCases.TestCase3LoginUserWithIncorrectEmailAndPassword" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testCase3LoginUserWithIncorrectEmailAndPassword" classname="com.automationpractice.ecommerce.testCases.TestCase3LoginUserWithIncorrectEmailAndPassword" time="0">
+    <skipped message="com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V"/>
+  </testcase>
+  <testcase name="afterTest" classname="com.automationpractice.ecommerce.testCases.TestCase3LoginUserWithIncorrectEmailAndPassword" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="afterClass" classname="com.automationpractice.ecommerce.testCases.TestCase3LoginUserWithIncorrectEmailAndPassword" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="beforeClass" classname="com.automationpractice.ecommerce.testCases.TestCase4LogoutUser" time="9.685">
+    <failure message="com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V" type="java.lang.NoSuchMethodError">java.lang.NoSuchMethodError: com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 6526
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+]]></system-err>
+  </testcase>
+  <testcase name="beforeMethod" classname="com.automationpractice.ecommerce.testCases.TestCase4LogoutUser" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testCase4LogoutUser" classname="com.automationpractice.ecommerce.testCases.TestCase4LogoutUser" time="0">
+    <skipped message="com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V"/>
+  </testcase>
+  <testcase name="afterTest" classname="com.automationpractice.ecommerce.testCases.TestCase4LogoutUser" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="afterClass" classname="com.automationpractice.ecommerce.testCases.TestCase4LogoutUser" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="beforeClass" classname="com.automationpractice.ecommerce.testCases.TestCase5RegisterUserWithExistingEmail" time="10.204">
+    <failure message="com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V" type="java.lang.NoSuchMethodError">java.lang.NoSuchMethodError: com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 34738
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+]]></system-err>
+  </testcase>
+  <testcase name="beforeMethod" classname="com.automationpractice.ecommerce.testCases.TestCase5RegisterUserWithExistingEmail" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testCase5RegisterUserWithExistingEmail" classname="com.automationpractice.ecommerce.testCases.TestCase5RegisterUserWithExistingEmail" time="0">
+    <skipped message="com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V"/>
+  </testcase>
+  <testcase name="afterTest" classname="com.automationpractice.ecommerce.testCases.TestCase5RegisterUserWithExistingEmail" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="afterClass" classname="com.automationpractice.ecommerce.testCases.TestCase5RegisterUserWithExistingEmail" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="beforeClass" classname="com.automationpractice.ecommerce.testCases.TestCase6ContactUsForm" time="10.722">
+    <failure message="com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V" type="java.lang.NoSuchMethodError">java.lang.NoSuchMethodError: com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 17770
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+]]></system-err>
+  </testcase>
+  <testcase name="beforeMethod" classname="com.automationpractice.ecommerce.testCases.TestCase6ContactUsForm" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testCase6ContactUsForm" classname="com.automationpractice.ecommerce.testCases.TestCase6ContactUsForm" time="0">
+    <skipped message="com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V"/>
+  </testcase>
+  <testcase name="afterTest" classname="com.automationpractice.ecommerce.testCases.TestCase6ContactUsForm" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="afterClass" classname="com.automationpractice.ecommerce.testCases.TestCase6ContactUsForm" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="beforeClass" classname="com.automationpractice.ecommerce.testCases.TestCase7VerifyTestCasesPage" time="11.249">
+    <failure message="com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V" type="java.lang.NoSuchMethodError">java.lang.NoSuchMethodError: com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 35253
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+]]></system-err>
+  </testcase>
+  <testcase name="beforeMethod" classname="com.automationpractice.ecommerce.testCases.TestCase7VerifyTestCasesPage" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testCase7VerifyTestCasesPage" classname="com.automationpractice.ecommerce.testCases.TestCase7VerifyTestCasesPage" time="0">
+    <skipped message="com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V"/>
+  </testcase>
+  <testcase name="afterTest" classname="com.automationpractice.ecommerce.testCases.TestCase7VerifyTestCasesPage" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="afterClass" classname="com.automationpractice.ecommerce.testCases.TestCase7VerifyTestCasesPage" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="beforeClass" classname="com.automationpractice.ecommerce.testCases.TestCase8VerifyAllProductsAndProductDetailPage" time="11.766">
+    <failure message="com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V" type="java.lang.NoSuchMethodError">java.lang.NoSuchMethodError: com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 43625
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+]]></system-err>
+  </testcase>
+  <testcase name="beforeMethod" classname="com.automationpractice.ecommerce.testCases.TestCase8VerifyAllProductsAndProductDetailPage" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testCase8VerifyAllProductsAndProductDetailPage" classname="com.automationpractice.ecommerce.testCases.TestCase8VerifyAllProductsAndProductDetailPage" time="0">
+    <skipped message="com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V"/>
+  </testcase>
+  <testcase name="afterTest" classname="com.automationpractice.ecommerce.testCases.TestCase8VerifyAllProductsAndProductDetailPage" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="afterClass" classname="com.automationpractice.ecommerce.testCases.TestCase8VerifyAllProductsAndProductDetailPage" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="beforeClass" classname="com.automationpractice.ecommerce.testCases.TestCase9SearchProduct" time="12.283">
+    <failure message="com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V" type="java.lang.NoSuchMethodError">java.lang.NoSuchMethodError: com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 42661
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+]]></system-err>
+  </testcase>
+  <testcase name="beforeMethod" classname="com.automationpractice.ecommerce.testCases.TestCase9SearchProduct" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testCase9SearchProduct" classname="com.automationpractice.ecommerce.testCases.TestCase9SearchProduct" time="0">
+    <skipped message="com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V"/>
+  </testcase>
+  <testcase name="afterTest" classname="com.automationpractice.ecommerce.testCases.TestCase9SearchProduct" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="afterClass" classname="com.automationpractice.ecommerce.testCases.TestCase9SearchProduct" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="beforeClass" classname="com.automationpractice.ecommerce.testCases.TestCase10VerifySubscriptionInHomepage" time="12.789">
+    <failure message="com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V" type="java.lang.NoSuchMethodError">java.lang.NoSuchMethodError: com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 29399
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+]]></system-err>
+  </testcase>
+  <testcase name="beforeMethod" classname="com.automationpractice.ecommerce.testCases.TestCase10VerifySubscriptionInHomepage" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testCase10VerifySubscriptionInHomepage" classname="com.automationpractice.ecommerce.testCases.TestCase10VerifySubscriptionInHomepage" time="0">
+    <skipped message="com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V"/>
+  </testcase>
+  <testcase name="afterTest" classname="com.automationpractice.ecommerce.testCases.TestCase10VerifySubscriptionInHomepage" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="afterClass" classname="com.automationpractice.ecommerce.testCases.TestCase10VerifySubscriptionInHomepage" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="beforeClass" classname="com.automationpractice.ecommerce.testCases.TestCase11VerifySubscriptionInCartpagePages_TC" time="13.308">
+    <failure message="com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V" type="java.lang.NoSuchMethodError">java.lang.NoSuchMethodError: com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 44231
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+]]></system-err>
+  </testcase>
+  <testcase name="beforeMethod" classname="com.automationpractice.ecommerce.testCases.TestCase11VerifySubscriptionInCartpagePages_TC" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testCase11VerifySubscriptionInCartpagePages_TC" classname="com.automationpractice.ecommerce.testCases.TestCase11VerifySubscriptionInCartpagePages_TC" time="0">
+    <skipped message="com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V"/>
+  </testcase>
+  <testcase name="afterTest" classname="com.automationpractice.ecommerce.testCases.TestCase11VerifySubscriptionInCartpagePages_TC" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="afterClass" classname="com.automationpractice.ecommerce.testCases.TestCase11VerifySubscriptionInCartpagePages_TC" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="beforeClass" classname="com.automationpractice.ecommerce.testCases.TestCase12AddProductsInCart" time="13.825">
+    <failure message="com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V" type="java.lang.NoSuchMethodError">java.lang.NoSuchMethodError: com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 5871
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+]]></system-err>
+  </testcase>
+  <testcase name="beforeMethod" classname="com.automationpractice.ecommerce.testCases.TestCase12AddProductsInCart" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testCase12AddProductsInCart" classname="com.automationpractice.ecommerce.testCases.TestCase12AddProductsInCart" time="0">
+    <skipped message="com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V"/>
+  </testcase>
+  <testcase name="afterTest" classname="com.automationpractice.ecommerce.testCases.TestCase12AddProductsInCart" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="afterClass" classname="com.automationpractice.ecommerce.testCases.TestCase12AddProductsInCart" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="beforeClass" classname="com.automationpractice.ecommerce.testCases.TestCase13VerifyProductQuantityInCart" time="14.343">
+    <failure message="com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V" type="java.lang.NoSuchMethodError">java.lang.NoSuchMethodError: com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 63436
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+]]></system-err>
+  </testcase>
+  <testcase name="beforeMethod" classname="com.automationpractice.ecommerce.testCases.TestCase13VerifyProductQuantityInCart" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testCase13VerifyProductQuantityInCartPages" classname="com.automationpractice.ecommerce.testCases.TestCase13VerifyProductQuantityInCart" time="0">
+    <skipped message="com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V"/>
+  </testcase>
+  <testcase name="afterTest" classname="com.automationpractice.ecommerce.testCases.TestCase13VerifyProductQuantityInCart" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="afterClass" classname="com.automationpractice.ecommerce.testCases.TestCase13VerifyProductQuantityInCart" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="beforeClass" classname="com.automationpractice.ecommerce.testCases.TestCase14PlaceOrderRegisterWhileCheckout" time="14.866">
+    <failure message="com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V" type="java.lang.NoSuchMethodError">java.lang.NoSuchMethodError: com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 17445
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+]]></system-err>
+  </testcase>
+  <testcase name="beforeMethod" classname="com.automationpractice.ecommerce.testCases.TestCase14PlaceOrderRegisterWhileCheckout" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testCase14PlaceOrderRegisterWhileCheckoutPages" classname="com.automationpractice.ecommerce.testCases.TestCase14PlaceOrderRegisterWhileCheckout" time="0">
+    <skipped message="com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V"/>
+  </testcase>
+  <testcase name="afterTest" classname="com.automationpractice.ecommerce.testCases.TestCase14PlaceOrderRegisterWhileCheckout" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="afterClass" classname="com.automationpractice.ecommerce.testCases.TestCase14PlaceOrderRegisterWhileCheckout" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="beforeClass" classname="com.automationpractice.ecommerce.testCases.TestCase15PlaceOrderRegisterBeforeCheckout" time="15.372">
+    <failure message="com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V" type="java.lang.NoSuchMethodError">java.lang.NoSuchMethodError: com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 17743
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+]]></system-err>
+  </testcase>
+  <testcase name="beforeMethod" classname="com.automationpractice.ecommerce.testCases.TestCase15PlaceOrderRegisterBeforeCheckout" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testCase15PlaceOrderRegisterBeforeCheckoutPages" classname="com.automationpractice.ecommerce.testCases.TestCase15PlaceOrderRegisterBeforeCheckout" time="0">
+    <skipped message="com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V"/>
+  </testcase>
+  <testcase name="afterTest" classname="com.automationpractice.ecommerce.testCases.TestCase15PlaceOrderRegisterBeforeCheckout" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="afterClass" classname="com.automationpractice.ecommerce.testCases.TestCase15PlaceOrderRegisterBeforeCheckout" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="beforeClass" classname="com.automationpractice.ecommerce.testCases.TestCase16PlaceOrderLoginBeforeCheckout" time="27.588">
+    <failure message="Timed out waiting for driver server to start.&#10;Build info: version: &apos;4.0.0-alpha-6&apos;, revision: &apos;5f43a29cfc&apos;&#10;System info: host: &apos;DESKTOP-C6OQV70&apos;, ip: &apos;192.168.0.193&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;&#10;Driver info: driver.version: ChromeDriver" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+Timed out waiting for driver server to start.
+Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
+System info: host: 'DESKTOP-C6OQV70', ip: '192.168.0.193', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: driver.version: ChromeDriver
+Caused by: java.util.concurrent.ExecutionException: java.lang.RuntimeException: java.lang.InterruptedException
+Caused by: java.lang.RuntimeException: java.lang.InterruptedException
+Caused by: java.lang.InterruptedException
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 46891
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+]]></system-err>
+  </testcase>
+  <testcase name="beforeMethod" classname="com.automationpractice.ecommerce.testCases.TestCase16PlaceOrderLoginBeforeCheckout" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testCase16PlaceOrderLoginBeforeCheckoutPages" classname="com.automationpractice.ecommerce.testCases.TestCase16PlaceOrderLoginBeforeCheckout" time="0">
+    <skipped message="Timed out waiting for driver server to start.&#10;Build info: version: &apos;4.0.0-alpha-6&apos;, revision: &apos;5f43a29cfc&apos;&#10;System info: host: &apos;DESKTOP-C6OQV70&apos;, ip: &apos;192.168.0.193&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;&#10;Driver info: driver.version: ChromeDriver"/>
+  </testcase>
+  <testcase name="afterTest" classname="com.automationpractice.ecommerce.testCases.TestCase16PlaceOrderLoginBeforeCheckout" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="afterClass" classname="com.automationpractice.ecommerce.testCases.TestCase16PlaceOrderLoginBeforeCheckout" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="beforeClass" classname="com.automationpractice.ecommerce.testCases.TestCase17RemoveProductsFromCart" time="28.105">
+    <failure message="com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V" type="java.lang.NoSuchMethodError">java.lang.NoSuchMethodError: com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 59861
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+]]></system-err>
+  </testcase>
+  <testcase name="beforeMethod" classname="com.automationpractice.ecommerce.testCases.TestCase17RemoveProductsFromCart" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testCase17RemoveProductsFromCartPages" classname="com.automationpractice.ecommerce.testCases.TestCase17RemoveProductsFromCart" time="0">
+    <skipped message="com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V"/>
+  </testcase>
+  <testcase name="afterTest" classname="com.automationpractice.ecommerce.testCases.TestCase17RemoveProductsFromCart" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="afterClass" classname="com.automationpractice.ecommerce.testCases.TestCase17RemoveProductsFromCart" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="beforeClass" classname="com.automationpractice.ecommerce.testCases.TestCase18ViewCategoryProducts" time="28.162">
+    <failure message="Timed out waiting for driver server to start.&#10;Build info: version: &apos;4.0.0-alpha-6&apos;, revision: &apos;5f43a29cfc&apos;&#10;System info: host: &apos;DESKTOP-C6OQV70&apos;, ip: &apos;192.168.0.193&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;&#10;Driver info: driver.version: ChromeDriver" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+Timed out waiting for driver server to start.
+Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
+System info: host: 'DESKTOP-C6OQV70', ip: '192.168.0.193', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: driver.version: ChromeDriver
+Caused by: java.util.concurrent.ExecutionException: java.lang.RuntimeException: java.lang.InterruptedException
+Caused by: java.lang.RuntimeException: java.lang.InterruptedException
+Caused by: java.lang.InterruptedException
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 24003
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+]]></system-err>
+  </testcase>
+  <testcase name="beforeMethod" classname="com.automationpractice.ecommerce.testCases.TestCase18ViewCategoryProducts" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testCase18ViewCategoryProductsPages" classname="com.automationpractice.ecommerce.testCases.TestCase18ViewCategoryProducts" time="0">
+    <skipped message="Timed out waiting for driver server to start.&#10;Build info: version: &apos;4.0.0-alpha-6&apos;, revision: &apos;5f43a29cfc&apos;&#10;System info: host: &apos;DESKTOP-C6OQV70&apos;, ip: &apos;192.168.0.193&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;&#10;Driver info: driver.version: ChromeDriver"/>
+  </testcase>
+  <testcase name="afterTest" classname="com.automationpractice.ecommerce.testCases.TestCase18ViewCategoryProducts" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="afterClass" classname="com.automationpractice.ecommerce.testCases.TestCase18ViewCategoryProducts" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="beforeClass" classname="com.automationpractice.ecommerce.testCases.TestCase19ViewAndCartBrandProducts" time="28.676">
+    <failure message="Timed out waiting for driver server to start.&#10;Build info: version: &apos;4.0.0-alpha-6&apos;, revision: &apos;5f43a29cfc&apos;&#10;System info: host: &apos;DESKTOP-C6OQV70&apos;, ip: &apos;192.168.0.193&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;&#10;Driver info: driver.version: ChromeDriver" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+Timed out waiting for driver server to start.
+Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
+System info: host: 'DESKTOP-C6OQV70', ip: '192.168.0.193', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: driver.version: ChromeDriver
+Caused by: java.util.concurrent.ExecutionException: 
+org.openqa.selenium.WebDriverException: java.lang.InterruptedException
+Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
+System info: host: 'DESKTOP-C6OQV70', ip: '192.168.0.193', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: driver.version: unknown
+Caused by: org.openqa.selenium.WebDriverException: 
+java.lang.InterruptedException
+Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
+System info: host: 'DESKTOP-C6OQV70', ip: '192.168.0.193', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: driver.version: unknown
+Caused by: java.lang.InterruptedException
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 7690
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+]]></system-err>
+  </testcase>
+  <testcase name="beforeMethod" classname="com.automationpractice.ecommerce.testCases.TestCase19ViewAndCartBrandProducts" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testCase19ViewAndCartBrandProductsPages" classname="com.automationpractice.ecommerce.testCases.TestCase19ViewAndCartBrandProducts" time="0">
+    <skipped message="Timed out waiting for driver server to start.&#10;Build info: version: &apos;4.0.0-alpha-6&apos;, revision: &apos;5f43a29cfc&apos;&#10;System info: host: &apos;DESKTOP-C6OQV70&apos;, ip: &apos;192.168.0.193&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;&#10;Driver info: driver.version: ChromeDriver"/>
+  </testcase>
+  <testcase name="afterTest" classname="com.automationpractice.ecommerce.testCases.TestCase19ViewAndCartBrandProducts" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="afterClass" classname="com.automationpractice.ecommerce.testCases.TestCase19ViewAndCartBrandProducts" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="beforeClass" classname="com.automationpractice.ecommerce.testCases.TestCase20SearchProductsAndVerifyCartAfterLogin" time="29.195">
+    <failure message="com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V" type="java.lang.NoSuchMethodError">java.lang.NoSuchMethodError: com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 27539
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+]]></system-err>
+  </testcase>
+  <testcase name="beforeMethod" classname="com.automationpractice.ecommerce.testCases.TestCase20SearchProductsAndVerifyCartAfterLogin" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testCase20SearchProductsAndVerifyCartAfterLoginPages" classname="com.automationpractice.ecommerce.testCases.TestCase20SearchProductsAndVerifyCartAfterLogin" time="0">
+    <skipped message="com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V"/>
+  </testcase>
+  <testcase name="afterTest" classname="com.automationpractice.ecommerce.testCases.TestCase20SearchProductsAndVerifyCartAfterLogin" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="afterClass" classname="com.automationpractice.ecommerce.testCases.TestCase20SearchProductsAndVerifyCartAfterLogin" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="beforeClass" classname="com.automationpractice.ecommerce.testCases.TestCase21AddReviewOnProduct" time="29.713">
+    <failure message="com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V" type="java.lang.NoSuchMethodError">java.lang.NoSuchMethodError: com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 28411
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+]]></system-err>
+  </testcase>
+  <testcase name="beforeMethod" classname="com.automationpractice.ecommerce.testCases.TestCase21AddReviewOnProduct" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testCase21AddReviewOnProductPages" classname="com.automationpractice.ecommerce.testCases.TestCase21AddReviewOnProduct" time="0">
+    <skipped message="com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V"/>
+  </testcase>
+  <testcase name="afterTest" classname="com.automationpractice.ecommerce.testCases.TestCase21AddReviewOnProduct" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="afterClass" classname="com.automationpractice.ecommerce.testCases.TestCase21AddReviewOnProduct" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="beforeClass" classname="com.automationpractice.ecommerce.testCases.TestCase22AddToCartFromRecommendedItems" time="29.718">
+    <failure message="Timed out waiting for driver server to start.&#10;Build info: version: &apos;4.0.0-alpha-6&apos;, revision: &apos;5f43a29cfc&apos;&#10;System info: host: &apos;DESKTOP-C6OQV70&apos;, ip: &apos;192.168.0.193&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;&#10;Driver info: driver.version: ChromeDriver" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+Timed out waiting for driver server to start.
+Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
+System info: host: 'DESKTOP-C6OQV70', ip: '192.168.0.193', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: driver.version: ChromeDriver
+Caused by: java.util.concurrent.ExecutionException: 
+org.openqa.selenium.WebDriverException: java.lang.InterruptedException
+Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
+System info: host: 'DESKTOP-C6OQV70', ip: '192.168.0.193', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: driver.version: unknown
+Caused by: org.openqa.selenium.WebDriverException: 
+java.lang.InterruptedException
+Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
+System info: host: 'DESKTOP-C6OQV70', ip: '192.168.0.193', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: driver.version: unknown
+Caused by: java.lang.InterruptedException
+</failure>
+  </testcase>
+  <testcase name="beforeMethod" classname="com.automationpractice.ecommerce.testCases.TestCase22AddToCartFromRecommendedItems" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testCase22AddToCartFromRecommendedItems" classname="com.automationpractice.ecommerce.testCases.TestCase22AddToCartFromRecommendedItems" time="0">
+    <skipped message="Timed out waiting for driver server to start.&#10;Build info: version: &apos;4.0.0-alpha-6&apos;, revision: &apos;5f43a29cfc&apos;&#10;System info: host: &apos;DESKTOP-C6OQV70&apos;, ip: &apos;192.168.0.193&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;&#10;Driver info: driver.version: ChromeDriver"/>
+  </testcase>
+  <testcase name="afterTest" classname="com.automationpractice.ecommerce.testCases.TestCase22AddToCartFromRecommendedItems" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="afterClass" classname="com.automationpractice.ecommerce.testCases.TestCase22AddToCartFromRecommendedItems" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="beforeClass" classname="com.automationpractice.ecommerce.testCases.TestCase23VerifyAddressDetailsInCheckoutpage" time="30.235">
+    <failure message="com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V" type="java.lang.NoSuchMethodError">java.lang.NoSuchMethodError: com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 44790
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 56262
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+]]></system-err>
+  </testcase>
+  <testcase name="beforeMethod" classname="com.automationpractice.ecommerce.testCases.TestCase23VerifyAddressDetailsInCheckoutpage" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testCase23VerifyAddressDetailsInCheckoutpagePages" classname="com.automationpractice.ecommerce.testCases.TestCase23VerifyAddressDetailsInCheckoutpage" time="0">
+    <skipped message="com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V"/>
+  </testcase>
+  <testcase name="afterTest" classname="com.automationpractice.ecommerce.testCases.TestCase23VerifyAddressDetailsInCheckoutpage" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="afterClass" classname="com.automationpractice.ecommerce.testCases.TestCase23VerifyAddressDetailsInCheckoutpage" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="beforeClass" classname="com.automationpractice.ecommerce.testCases.TestCase24DownloadInvoiceAfterPurchaseOrder" time="30.761">
+    <failure message="com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V" type="java.lang.NoSuchMethodError">java.lang.NoSuchMethodError: com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 22577
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+]]></system-err>
+  </testcase>
+  <testcase name="beforeMethod" classname="com.automationpractice.ecommerce.testCases.TestCase24DownloadInvoiceAfterPurchaseOrder" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testCase24DownloadInvoiceAfterPurchaseOrderPages" classname="com.automationpractice.ecommerce.testCases.TestCase24DownloadInvoiceAfterPurchaseOrder" time="0">
+    <skipped message="com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V"/>
+  </testcase>
+  <testcase name="afterTest" classname="com.automationpractice.ecommerce.testCases.TestCase24DownloadInvoiceAfterPurchaseOrder" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="afterClass" classname="com.automationpractice.ecommerce.testCases.TestCase24DownloadInvoiceAfterPurchaseOrder" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="beforeClass" classname="com.automationpractice.ecommerce.testCases.TestCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality" time="31.277">
+    <failure message="com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V" type="java.lang.NoSuchMethodError">java.lang.NoSuchMethodError: com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 55264
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+]]></system-err>
+  </testcase>
+  <testcase name="beforeMethod" classname="com.automationpractice.ecommerce.testCases.TestCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality" classname="com.automationpractice.ecommerce.testCases.TestCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality" time="0">
+    <skipped message="com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V"/>
+  </testcase>
+  <testcase name="afterTest" classname="com.automationpractice.ecommerce.testCases.TestCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="afterClass" classname="com.automationpractice.ecommerce.testCases.TestCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="beforeClass" classname="com.automationpractice.ecommerce.testCases.TestCase26VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality" time="31.794">
+    <failure message="com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V" type="java.lang.NoSuchMethodError">java.lang.NoSuchMethodError: com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 52950
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+]]></system-err>
+  </testcase>
+  <testcase name="beforeMethod" classname="com.automationpractice.ecommerce.testCases.TestCase26VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testCase26VerifyScrollUpWithout_Arrow_buttonAndScrollDownFunctionalityPages" classname="com.automationpractice.ecommerce.testCases.TestCase26VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality" time="0">
+    <skipped message="com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V"/>
+  </testcase>
+  <testcase name="afterTest" classname="com.automationpractice.ecommerce.testCases.TestCase26VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="afterClass" classname="com.automationpractice.ecommerce.testCases.TestCase26VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality" time="0">
+    <skipped/>
+  </testcase>
 </testsuite>

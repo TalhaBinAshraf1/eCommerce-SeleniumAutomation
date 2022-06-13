@@ -20,14 +20,15 @@ public class BaseClass {
     public void beforeClass(){
       /*  String baseDir = System.getProperty("user.dir");
         String chromeDir= baseDir + "/browser/chromedriver.exe ";
+        String chromeDir= baseDir + "/browser/chromedriver.exe ";
 
         System.setProperty("webDriver.chrome.driver", chromeDir);
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);*/
-        String baseDir = System.getProperty("user.dir");
+       // String baseDir = System.getProperty("user.dir");
 
-//
+
 //        String chromeDir = baseDir + "/browser/chromedriver22.exe";
 //        System.setProperty("webdriver.chrome.driver", chromeDir);
 

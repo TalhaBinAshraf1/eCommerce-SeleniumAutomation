@@ -1,37 +1,126 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 26, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 1,189.222 sec <<< FAILURE! - in TestSuite
-testCase6ContactUsForm(com.automationpractice.ecommerce.testCases.TestCase6ContactUsForm)  Time elapsed: 13.218 sec  <<< FAILURE!
-org.openqa.selenium.InvalidArgumentException: 
-invalid argument: File not found : C:\Users\Talha\Desktop\demoImage.png
-  (Session info: chrome=100.0.4896.127)
-Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
-System info: host: 'DESKTOP-C6OQV70', ip: '192.168.0.193', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Talha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52871}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 36e321e98b6e45d2b90c629d46bed3e9
-	at com.automationpractice.ecommerce.testCases.TestCase6ContactUsForm.testCase6ContactUsForm(TestCase6ContactUsForm.java:88)
+Tests run: 130, Failures: 26, Errors: 0, Skipped: 104, Time elapsed: 31.893 sec <<< FAILURE! - in TestSuite
+beforeClass(com.automationpractice.ecommerce.testCases.TestCase1RegisterUser)  Time elapsed: 8.124 sec  <<< FAILURE!
+java.lang.NoSuchMethodError: com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V
 
-testCase12AddProductsInCart(com.automationpractice.ecommerce.testCases.TestCase12AddProductsInCart)  Time elapsed: 51.276 sec  <<< FAILURE!
-org.openqa.selenium.ElementNotInteractableException: 
-element not interactable
-  (Session info: chrome=100.0.4896.127)
-Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
-System info: host: 'DESKTOP-C6OQV70', ip: '192.168.0.193', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Talha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59151}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: c436c90c56d8c072f1ebe6201d6323d0
-	at com.automationpractice.ecommerce.testCases.TestCase12AddProductsInCart.testCase12AddProductsInCart(TestCase12AddProductsInCart.java:64)
+beforeClass(com.automationpractice.ecommerce.testCases.TestCase2LoginUserWithCorrectEmailAndPassword)  Time elapsed: 8.646 sec  <<< FAILURE!
+java.lang.NoSuchMethodError: com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V
 
-testCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality(com.automationpractice.ecommerce.testCases.TestCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality)  Time elapsed: 3.021 sec  <<< FAILURE!
+beforeClass(com.automationpractice.ecommerce.testCases.TestCase3LoginUserWithIncorrectEmailAndPassword)  Time elapsed: 9.165 sec  <<< FAILURE!
+java.lang.NoSuchMethodError: com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V
+
+beforeClass(com.automationpractice.ecommerce.testCases.TestCase4LogoutUser)  Time elapsed: 9.685 sec  <<< FAILURE!
+java.lang.NoSuchMethodError: com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V
+
+beforeClass(com.automationpractice.ecommerce.testCases.TestCase5RegisterUserWithExistingEmail)  Time elapsed: 10.204 sec  <<< FAILURE!
+java.lang.NoSuchMethodError: com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V
+
+beforeClass(com.automationpractice.ecommerce.testCases.TestCase6ContactUsForm)  Time elapsed: 10.722 sec  <<< FAILURE!
+java.lang.NoSuchMethodError: com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V
+
+beforeClass(com.automationpractice.ecommerce.testCases.TestCase7VerifyTestCasesPage)  Time elapsed: 11.249 sec  <<< FAILURE!
+java.lang.NoSuchMethodError: com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V
+
+beforeClass(com.automationpractice.ecommerce.testCases.TestCase8VerifyAllProductsAndProductDetailPage)  Time elapsed: 11.766 sec  <<< FAILURE!
+java.lang.NoSuchMethodError: com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V
+
+beforeClass(com.automationpractice.ecommerce.testCases.TestCase9SearchProduct)  Time elapsed: 12.283 sec  <<< FAILURE!
+java.lang.NoSuchMethodError: com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V
+
+beforeClass(com.automationpractice.ecommerce.testCases.TestCase10VerifySubscriptionInHomepage)  Time elapsed: 12.789 sec  <<< FAILURE!
+java.lang.NoSuchMethodError: com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V
+
+beforeClass(com.automationpractice.ecommerce.testCases.TestCase11VerifySubscriptionInCartpagePages_TC)  Time elapsed: 13.308 sec  <<< FAILURE!
+java.lang.NoSuchMethodError: com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V
+
+beforeClass(com.automationpractice.ecommerce.testCases.TestCase12AddProductsInCart)  Time elapsed: 13.825 sec  <<< FAILURE!
+java.lang.NoSuchMethodError: com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V
+
+beforeClass(com.automationpractice.ecommerce.testCases.TestCase13VerifyProductQuantityInCart)  Time elapsed: 14.343 sec  <<< FAILURE!
+java.lang.NoSuchMethodError: com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V
+
+beforeClass(com.automationpractice.ecommerce.testCases.TestCase14PlaceOrderRegisterWhileCheckout)  Time elapsed: 14.866 sec  <<< FAILURE!
+java.lang.NoSuchMethodError: com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V
+
+beforeClass(com.automationpractice.ecommerce.testCases.TestCase15PlaceOrderRegisterBeforeCheckout)  Time elapsed: 15.372 sec  <<< FAILURE!
+java.lang.NoSuchMethodError: com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V
+
+beforeClass(com.automationpractice.ecommerce.testCases.TestCase16PlaceOrderLoginBeforeCheckout)  Time elapsed: 27.588 sec  <<< FAILURE!
 org.openqa.selenium.WebDriverException: 
-target frame detached
-  (Session info: chrome=100.0.4896.127)
+Timed out waiting for driver server to start.
 Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
 System info: host: 'DESKTOP-C6OQV70', ip: '192.168.0.193', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Talha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62393}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 328f65a268404a4dbbb97492ab2a6ac2
-	at com.automationpractice.ecommerce.testCases.TestCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality.testCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality(TestCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality.java:26)
+Driver info: driver.version: ChromeDriver
+Caused by: java.util.concurrent.ExecutionException: java.lang.RuntimeException: java.lang.InterruptedException
+Caused by: java.lang.RuntimeException: java.lang.InterruptedException
+Caused by: java.lang.InterruptedException
+
+beforeClass(com.automationpractice.ecommerce.testCases.TestCase17RemoveProductsFromCart)  Time elapsed: 28.105 sec  <<< FAILURE!
+java.lang.NoSuchMethodError: com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V
+
+beforeClass(com.automationpractice.ecommerce.testCases.TestCase18ViewCategoryProducts)  Time elapsed: 28.162 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+Timed out waiting for driver server to start.
+Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
+System info: host: 'DESKTOP-C6OQV70', ip: '192.168.0.193', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: driver.version: ChromeDriver
+Caused by: java.util.concurrent.ExecutionException: java.lang.RuntimeException: java.lang.InterruptedException
+Caused by: java.lang.RuntimeException: java.lang.InterruptedException
+Caused by: java.lang.InterruptedException
+
+beforeClass(com.automationpractice.ecommerce.testCases.TestCase19ViewAndCartBrandProducts)  Time elapsed: 28.676 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+Timed out waiting for driver server to start.
+Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
+System info: host: 'DESKTOP-C6OQV70', ip: '192.168.0.193', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: driver.version: ChromeDriver
+Caused by: java.util.concurrent.ExecutionException: 
+org.openqa.selenium.WebDriverException: java.lang.InterruptedException
+Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
+System info: host: 'DESKTOP-C6OQV70', ip: '192.168.0.193', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: driver.version: unknown
+Caused by: org.openqa.selenium.WebDriverException: 
+java.lang.InterruptedException
+Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
+System info: host: 'DESKTOP-C6OQV70', ip: '192.168.0.193', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: driver.version: unknown
+Caused by: java.lang.InterruptedException
+
+beforeClass(com.automationpractice.ecommerce.testCases.TestCase20SearchProductsAndVerifyCartAfterLogin)  Time elapsed: 29.195 sec  <<< FAILURE!
+java.lang.NoSuchMethodError: com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V
+
+beforeClass(com.automationpractice.ecommerce.testCases.TestCase21AddReviewOnProduct)  Time elapsed: 29.713 sec  <<< FAILURE!
+java.lang.NoSuchMethodError: com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V
+
+beforeClass(com.automationpractice.ecommerce.testCases.TestCase22AddToCartFromRecommendedItems)  Time elapsed: 29.718 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+Timed out waiting for driver server to start.
+Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
+System info: host: 'DESKTOP-C6OQV70', ip: '192.168.0.193', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: driver.version: ChromeDriver
+Caused by: java.util.concurrent.ExecutionException: 
+org.openqa.selenium.WebDriverException: java.lang.InterruptedException
+Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
+System info: host: 'DESKTOP-C6OQV70', ip: '192.168.0.193', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: driver.version: unknown
+Caused by: org.openqa.selenium.WebDriverException: 
+java.lang.InterruptedException
+Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
+System info: host: 'DESKTOP-C6OQV70', ip: '192.168.0.193', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: driver.version: unknown
+Caused by: java.lang.InterruptedException
+
+beforeClass(com.automationpractice.ecommerce.testCases.TestCase23VerifyAddressDetailsInCheckoutpage)  Time elapsed: 30.235 sec  <<< FAILURE!
+java.lang.NoSuchMethodError: com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V
+
+beforeClass(com.automationpractice.ecommerce.testCases.TestCase24DownloadInvoiceAfterPurchaseOrder)  Time elapsed: 30.761 sec  <<< FAILURE!
+java.lang.NoSuchMethodError: com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V
+
+beforeClass(com.automationpractice.ecommerce.testCases.TestCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality)  Time elapsed: 31.277 sec  <<< FAILURE!
+java.lang.NoSuchMethodError: com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V
+
+beforeClass(com.automationpractice.ecommerce.testCases.TestCase26VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality)  Time elapsed: 31.794 sec  <<< FAILURE!
+java.lang.NoSuchMethodError: com.google.common.base.Throwables.throwIfUnchecked(Ljava/lang/Throwable;)V
 
