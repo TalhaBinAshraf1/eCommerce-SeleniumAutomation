@@ -1,4 +1,3 @@
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 <suite name = "Regression" verbose="1">
     <test name = "UITest">
@@ -33,8 +32,6 @@
                     <include name="testCase5RegisterUserWithExistingEmail" />
                 </methods>
             </class>
-
-
 
             <class name ="com.automationpractice.ecommerce.testCases.TestCase6ContactUsForm">
                 <methods>

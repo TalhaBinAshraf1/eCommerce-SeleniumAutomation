@@ -216,7 +216,6 @@ public class Data {
     //                      ✅✅✅     Test Case 25: Verify Scroll Up using 'Arrow' button and Scroll Down functionality    ✅✅✅
 
 
-
     public static final String FULL_FLEDGED_PRACTICE_WEBSITE_FOR_AUTOMATION_EXERCISE_TEXT = "Full-Fledged practice website for Automation Engineers";
 
 

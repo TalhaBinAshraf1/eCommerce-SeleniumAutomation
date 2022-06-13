@@ -85,7 +85,7 @@ public class TestCase6ContactUsForm extends BaseClass{
 
 //    TC  - 7. Upload file
        // tc6cufp.getChooseFileButton().click();
-        tc6cufp.getChooseFileButton().sendKeys("C:\\Users\\Talha\\Desktop\\demoImage.png");
+        tc6cufp.getChooseFileButton().sendKeys("E:\\Github\\SeleniumAutomationPractice\\ecommerce\\testData\\demoImage.png");
         js.executeScript("window.scrollBy(0,200)");
 
         sleepTest(3000);
