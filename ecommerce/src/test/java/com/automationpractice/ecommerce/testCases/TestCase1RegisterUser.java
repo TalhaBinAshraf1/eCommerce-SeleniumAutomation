@@ -344,15 +344,6 @@ public class TestCase1RegisterUser extends BaseClass {
 
         tc1rup.getDeleteButton().click();
         sleepTest(2000);
-
-
-
-        //TC -17 Account
-        tc1rup.getDeleteAccountButton().click();
-
-        //TC- 18
-
-        tc1rup.getDeleteButton().click();
         sleepTest(2000);
 
 
