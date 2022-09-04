@@ -62,6 +62,7 @@ public class TestCase2LoginUserWithCorrectEmailAndPassword extends BaseClass{
 //     TC - 10. Verify that 'ACCOUNT DELETED!' is visible
         tc2luwceapp.getDeleteButton().click();
         sleepTest(2000);
+        sleepTest(2000);
 
     }
 }
