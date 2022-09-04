@@ -124,6 +124,7 @@ public class TestCase1RegisterUser extends BaseClass {
         By month =By.cssSelector("select#months");
         By year = By.cssSelector("select#years");
 
+
         tc1rup.dropDownSelect(day , "10");
         tc1rup.dropDownSelect(day,"28");
 
@@ -321,7 +322,6 @@ public class TestCase1RegisterUser extends BaseClass {
         }
         sleepTest(2000);
 
-
         //TC - 15 Click on Continue Button
         tc1rup.getContinueButton().click();
 
@@ -336,6 +336,16 @@ public class TestCase1RegisterUser extends BaseClass {
             System.out.println(Data.NEGATIVE_ERROR_MASSAGE);
         }
         sleepTest(2000);
+
+        //TC -17 Account
+        tc1rup.getDeleteAccountButton().click();
+
+        //TC- 18
+
+        tc1rup.getDeleteButton().click();
+        sleepTest(2000);
+
+
 
         //TC -17 Account
         tc1rup.getDeleteAccountButton().click();

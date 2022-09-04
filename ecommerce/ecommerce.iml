@@ -131,5 +131,9 @@
     <orderEntry type="library" name="Maven: org.rauschig:jarchivelib:1.0.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.commons:commons-compress:1.18" level="project" />
     <orderEntry type="library" name="Maven: org.jsoup:jsoup:1.11.3" level="project" />
+    <orderEntry type="library" name="Maven: io.qameta.allure:allure-testng:2.17.3" level="project" />
+    <orderEntry type="library" name="Maven: io.qameta.allure:allure-java-commons:2.17.3" level="project" />
+    <orderEntry type="library" name="Maven: io.qameta.allure:allure-model:2.17.3" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: io.qameta.allure:allure-test-filter:2.17.3" level="project" />
   </component>
 </module>
