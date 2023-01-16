@@ -24,8 +24,8 @@ public class Data {
     //Signup button validation
     public static final String SIGNUP_BUTTON_TEXT = "Signup";
     //Email and Password
-    public static final String DEMO_USER_NAME= "test01112897";
-    public static final String DEMO_EMAIL= "alexsmkovtkvtzb487797@sgisfg.com";
+    public static final String DEMO_USER_NAME= "test011128987";
+    public static final String DEMO_EMAIL= "alexsmkovtkvtzb4787797@sgisfg.com";
     public static final String DEMO_PASSWORD= "Asdf1121234@";
     //signup
     public static final String ENTER_ACCOUNT_INFORMATION = "ENTER ACCOUNT INFORMATION";
