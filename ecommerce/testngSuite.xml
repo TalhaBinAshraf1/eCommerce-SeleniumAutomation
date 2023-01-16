@@ -9,21 +9,16 @@
                 </methods>
             </class>
 
-            <class name ="com.automationpractice.ecommerce.testCases.TestCase2LoginUserWithCorrectEmailAndPassword">
+            <class name ="com.automationpractice.ecommerce.testCases.TestCase4LogoutUser">
                 <methods>
-                    <include name="testCase2LoginUserWithCorrectEmailAndPassword" />
+                    <include name="testCase4LogoutUser" />
                 </methods>
             </class>
+
 
             <class name ="com.automationpractice.ecommerce.testCases.TestCase3LoginUserWithIncorrectEmailAndPassword">
                 <methods>
                     <include name="testCase3LoginUserWithIncorrectEmailAndPassword" />
-                </methods>
-            </class>
-
-            <class name ="com.automationpractice.ecommerce.testCases.TestCase4LogoutUser">
-                <methods>
-                    <include name="testCase4LogoutUser" />
                 </methods>
             </class>
 
@@ -32,6 +27,14 @@
                     <include name="testCase5RegisterUserWithExistingEmail" />
                 </methods>
             </class>
+
+            <class name ="com.automationpractice.ecommerce.testCases.TestCase2LoginUserWithCorrectEmailAndPassword">
+                <methods>
+                    <include name="testCase2LoginUserWithCorrectEmailAndPassword" />
+                </methods>
+            </class>
+
+
 
             <class name ="com.automationpractice.ecommerce.testCases.TestCase6ContactUsForm">
                 <methods>

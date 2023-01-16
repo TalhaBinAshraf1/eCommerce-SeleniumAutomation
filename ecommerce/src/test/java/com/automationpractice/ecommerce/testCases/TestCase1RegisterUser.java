@@ -6,6 +6,7 @@ import com.automationpractice.ecommerce.utilities.Data;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -285,6 +286,25 @@ public class TestCase1RegisterUser extends BaseClass {
         }
         sleepTest(2000);
 
+        //Scroll
+        JavascriptExecutor js1 = (JavascriptExecutor) driver;
+
+        long initialLength = (long) js1.executeScript("return document.body.scrollHeight");
+
+        while (true) {
+            js1.executeScript("window.scrollTo(0,document.body.scrollHeight)");
+            sleepTest(3000);
+
+            long currentLength = (long) js1.executeScript("return document.body.scrollHeight");
+            if (initialLength == currentLength) {
+                break;
+            }
+
+            initialLength = currentLength;
+            sleepTest(2000);
+        }
+
+
         // Mobile Number
         if (tc1rup.getMobileNumberInputField().isDisplayed())
         {
@@ -337,6 +357,7 @@ public class TestCase1RegisterUser extends BaseClass {
         }
         sleepTest(2000);
 
+
         //TC -17 Account
         tc1rup.getDeleteAccountButton().click();
 
@@ -345,8 +366,6 @@ public class TestCase1RegisterUser extends BaseClass {
         tc1rup.getDeleteButton().click();
         sleepTest(2000);
         sleepTest(2000);
-
-
     }
 
 }
