@@ -1,16 +1,16 @@
-#Web-Automation-With-Selenium-TestNG-Ecommerce Automation🤞😃
+# Web-Automation-With-Selenium-TestNG-Ecommerce Automation🤞😃
 Testing Site -> 🌍 http://automationpractice.com/  🌍
 
-## Tool used in this Project
+### Tool used in this Project
  🔸Selenium with Java
 
-## Framework used in this Project
+### Framework used in this Project
  🔸TestNG
 
-## Dependency Management Tool
+### Dependency Management Tool
  🔸Maven  
  
-## Testing reports: 
+### Testing reports: 
  🔸Allure
  🔸TestNG
  🔸Surefire
