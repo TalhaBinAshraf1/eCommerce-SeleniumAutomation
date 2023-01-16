@@ -1,6 +1,7 @@
 # Web-Automation-With-Selenium-TestNG-Ecommerce Automation🤞😃
-Testing Site -> 🌍 http://automationpractice.com/  🌍
+Testing Site -> 🌍 http://automationpractice.com/ 
 
+### Automated 24 Test Cases.
 ### Tool used in this Project
  🔸Selenium with Java
 
@@ -28,3 +29,14 @@ Testing Site -> 🌍 http://automationpractice.com/  🌍
 ### 🔸Surefire Report :
 
 ![surefire](https://user-images.githubusercontent.com/35797610/212610748-68e81e33-0182-4eb7-b08d-9483e7030ec6.jpg)
+
+### 🔸Output Vedio of project
+
+https://user-images.githubusercontent.com/35797610/212618171-110a7eed-6a14-4494-a0c3-834bbcfa37a9.mp4
+
+
+
+
+
+
+
