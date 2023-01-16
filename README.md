@@ -7,7 +7,7 @@ Testing Site -> 🌍 http://automationpractice.com/  🌍
 ## Framework used in this Project
  🔸TestNG
 
-##Dependency Management Tool
+## Dependency Management Tool
  🔸Maven  
  
 ## Testing reports: 
