@@ -10,7 +10,7 @@ public class TestCase7VerifyTestCasesPage_Page extends BasePage {
     }
 
 
-    @FindBy(css=".nav.navbar-nav > li:nth-of-type(5) > a")
+    @FindBy(css=".nav.navbar-nav > li:nth-of-type(5)")
     public WebElement testCasesButton;
     public WebElement getTestCasesButton(){
         return testCasesButton;

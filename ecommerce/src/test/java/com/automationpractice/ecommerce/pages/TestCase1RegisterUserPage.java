@@ -153,7 +153,7 @@ public class TestCase1RegisterUserPage extends BasePage {
         return continueButton;
     }
 
-    @FindBy(css = "li:nth-of-type(9) > a")
+    @FindBy(css = "li:nth-of-type(10) > a")
     public WebElement loggedInAsUsernameText;
     public WebElement getLoggedInAsUsernameText() {
         return loggedInAsUsernameText;

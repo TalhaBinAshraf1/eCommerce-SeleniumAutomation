@@ -12,6 +12,7 @@ public class TestCase5RegisterUserWithExistingEmail extends BaseClass{
 
         TestCase5RegisterUserWithExistingEmailPage tc5ruweep = new TestCase5RegisterUserWithExistingEmailPage(driver);
 
+
         //TC-4 Click on 'Signup / Login' button
         tc5ruweep.getSignInButton().click();
         System.out.println("Sign in Button Clicked");

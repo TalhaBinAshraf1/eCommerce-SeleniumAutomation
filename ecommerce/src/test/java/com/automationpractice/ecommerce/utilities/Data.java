@@ -24,16 +24,15 @@ public class Data {
     //Signup button validation
     public static final String SIGNUP_BUTTON_TEXT = "Signup";
     //Email and Password
-    public static final String DEMO_USER_NAME= "test012897";
-    public static final String DEMO_EMAIL= "alexsmkovtkvtzb4897@sgisfg.com";
-    public static final String DEMO_PASSWORD= "Asdf1234";
-
+    public static final String DEMO_USER_NAME= "test01112897";
+    public static final String DEMO_EMAIL= "alexsmkovtkvtzb487797@sgisfg.com";
+    public static final String DEMO_PASSWORD= "Asdf1121234@";
     //signup
     public static final String ENTER_ACCOUNT_INFORMATION = "ENTER ACCOUNT INFORMATION";
     //Address Information
-    public static final String FIRST_NAME= "Alex";
-    public static final String LAST_NAME= "Smakov";
-    public static final String COMPANY= "TestCompany";
+    public static final String FIRST_NAME= "Ale1x";
+    public static final String LAST_NAME= "Smako1v";
+    public static final String COMPANY= "TestComp1any";
     public static final String ADDRESS= "145-W,Troy,Newyork,USA";
     public static final String ADDRESS2= "145-W,Newyork ";
     public static final String STATE= "NewYork";
@@ -45,7 +44,7 @@ public class Data {
     //Account Created text
     public static final String  ACCOUNT_CREATED_TEXT = "ACCOUNT CREATED!";
     //Logged In As User Name  text
-    public static final String  LOGGED_IN_AS_USER_TEXT = "Logged in as test012897";
+    public static final String  LOGGED_IN_AS_USER_TEXT = "Logged in as test01112897";
 
 
 
@@ -59,8 +58,8 @@ public class Data {
 
     //                      ✅✅✅  Test Case 3 : Login User with incorrect email and password  ✅✅✅
 
-    public static final String DEMO_INCORRECT_EMAIL= "alexsmkovtkvtzb420@sgisfg.com";
-    public static final String DEMO_INCORRECT_PASSWORD= "Asdfgh1234";
+    public static final String DEMO_INCORRECT_EMAIL= "alexsmkovtkvt44zb420@sgisfg.com";
+    public static final String DEMO_INCORRECT_PASSWORD= "Asdfg44h1234";
     public static final String YOUR_EMAIL_OR_PASSWORD_IS_INCORRECT= "Your email or password is incorrect!";
 
 
@@ -75,7 +74,7 @@ public class Data {
 
     public static final String GET_IN_TOUCH= "GET IN TOUCH";
     public static final String NAME= "AB Zaman";
-    public static final String EMAIL= "test0123455@testmail.com";
+    public static final String EMAIL= "test012344455@testmail.com";
     public static final String SUBJECT= "Test Ongoing In Selenium ";
     public static final String SUCESS_MESSAGE= "Success! Your details have been submitted successfully.";
 
@@ -106,7 +105,7 @@ public class Data {
 //                      ✅✅✅      Test Case 10: Verify Subscription in home page  ✅✅✅
 
 
-    public static final String DEMO_EMAIL_ADDRESS= "test01234@testmail.com";
+    public static final String DEMO_EMAIL_ADDRESS= "test012344@testmail.com";
     public static final String SUBSCRIPTION_TEXT= "SUBSCRIPTION";
 
 

@@ -9,7 +9,7 @@ public class TestCase6ContactUsFormPage extends BasePage{
         super(driver);
     }
 
-    @FindBy(css="li:nth-of-type(7) > a")
+    @FindBy(css="li:nth-of-type(8) > a")
     public WebElement contactusButton;
     public WebElement getContactusButton(){
         return contactusButton;

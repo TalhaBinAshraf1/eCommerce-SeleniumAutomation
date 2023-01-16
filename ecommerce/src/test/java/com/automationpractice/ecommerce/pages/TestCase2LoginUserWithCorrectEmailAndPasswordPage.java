@@ -39,7 +39,7 @@ public class TestCase2LoginUserWithCorrectEmailAndPasswordPage extends BasePage 
         return loginButton;
     }
 
-    @FindBy(css = "li:nth-of-type(9) > a")
+    @FindBy(css = "li:nth-of-type(10) > a")
     public WebElement loggedInAsUsernameText;
     public WebElement getLoggedInAsUsernameText() {
         return loggedInAsUsernameText;
@@ -51,7 +51,7 @@ public class TestCase2LoginUserWithCorrectEmailAndPasswordPage extends BasePage 
         return deleteAccountButton;
     }
 
-    @FindBy(css = ".button-form > .btn.btn-danger")
+    @FindBy(css = ".btn.btn-primary")
     public WebElement deleteButton;
     public WebElement getDeleteButton() {
         return deleteButton;
